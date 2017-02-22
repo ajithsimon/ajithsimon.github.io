@@ -11,7 +11,7 @@
         <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16"> 
 
         <meta name="p:domain_verify" content="33e5909b4468413a9b48b9dae91e9007"/><!--Pinterest-->
-        
+
         <meta property="og:title" content="Ajithkumar S - Senior Frontend Developer for Hire"/>
         <meta property="og:image" content="img/ajith.jpg"/>
         <meta property="og:url" content="http://ajithsimon.com"/>
@@ -28,10 +28,39 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
-
+        <!--Scripts-->
+        <script src="js/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $('.grid').isotope({
+                itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
+                percentPosition: true,
+                masonry: {
+                    columnWidth: '.grid-sizer'
+                }
+            });
+        </script>
+        <!--scripts-->
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'});
+                var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-TKB38V');</script>
+        <!-- End Google Tag Manager -->
     </head>
 
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKB38V"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <header> <!--header section-->
             <nav class="navbar navbar-default" data-spy="affix" data-offset-top="100"> <!--navigation-->
                 <div class="container">
@@ -344,32 +373,5 @@
                 </ul>
             </div>
         </footer>
-        <!--Scripts-->
-        <script src="js/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script>
-            $('.grid').isotope({
-                itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
-                percentPosition: true,
-                masonry: {
-                    columnWidth: '.grid-sizer'
-                }
-            });
-        </script>
-        <!--scripts-->
-        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKB38V"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <script>(function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({'gtm.start':
-                            new Date().getTime(), event: 'gtm.js'});
-                var f = d.getElementsByTagName(s)[0],
-                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src =
-                        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-TKB38V');</script>
-        <!-- End Google Tag Manager -->
     </body>
 </html>

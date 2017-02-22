@@ -30,10 +30,39 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
-
+        <!--Scripts-->
+        <script src="js/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+        <script>
+            $('.main-carousel').flickity({
+                // options
+                cellAlign: 'left',
+                contain: true,
+                prevNextButtons: false,
+            });
+        </script>
+        <!--scripts-->
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'});
+                var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-TKB38V');</script>
+        <!-- End Google Tag Manager -->
     </head>
 
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKB38V"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <header> <!--header section-->
             <nav class="navbar navbar-default" data-spy="affix" data-offset-top="100"> <!--navigation-->
                 <div class="container">
@@ -155,31 +184,5 @@
             </div>
         </footer>
         <!--Scripts-->
-        <script src="js/jquery-1.12.4.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
-        <script>
-            $('.main-carousel').flickity({
-                // options
-                cellAlign: 'left',
-                contain: true,
-                prevNextButtons: false,
-            });
-        </script>
-        <!--scripts-->
-        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKB38V"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <script>(function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({'gtm.start':
-                            new Date().getTime(), event: 'gtm.js'});
-                var f = d.getElementsByTagName(s)[0],
-                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src =
-                        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-TKB38V');</script>
-        <!-- End Google Tag Manager -->
     </body>
 </html>
