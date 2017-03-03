@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="author" content="Ajithkumar">
-        <link rel="shortcut icon" href="assets/img/logo-fav.png">
         <title>AR - Dashboard</title>
         <link rel="stylesheet" type="text/css" href="assets/lib/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
         <link rel="stylesheet" type="text/css" href="assets/lib/material-design-icons/css/material-design-iconic-font.min.css"/><!--[if lt IE 9]>
@@ -23,60 +22,116 @@
                     <div class="page-title"><span>Dashboard</span></div>
                     <div class="be-right-navbar">
                         <ul class="nav navbar-nav navbar-right be-user-nav">
-                            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="assets/img/avatar.png" alt="Avatar"><span class="user-name">Túpac Amaru</span></a>
+                            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="assets/img/avatar6.png" alt="Avatar"><span class="user-name">Aparna</span></a>
                                 <ul role="menu" class="dropdown-menu">
-                                    <li>
-                                        <div class="user-info">
-                                            <div class="user-name">Aparna</div>
-                                        </div>
-                                    </li>
                                     <li><a href="#"><span class="icon mdi mdi-face"></span> Account</a></li>
                                     <li><a href="#"><span class="icon mdi mdi-settings"></span> Settings</a></li>
                                     <li><a href="#"><span class="icon mdi mdi-power"></span> Logout</a></li>
                                 </ul>
-                            </li>
+                            </li> 
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="be-content">
-                <nav class="navbar navbar-default be-top-header">
+            <div class=" be-color-header be-color-header-default">
+                 <nav class="navbar navbar-default be-top-header">
                     <div class="container-fluid">
-                        <div class="be-left-navbar">
-                            <ul class="nav navbar-nav">
-                                <li><a href="index.html">Dashboard1</a></li>
-                                <li><a href="dashboard2.html">Dashboard2</a></li>
-                                <li><a href="dashboard3.html">Dashboard3</a></li>
+                        <div class="be-right-navbar">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li class="active"><a href="index.html"><span class="icon mdi mdi-home"></span> Dashboard1</a></li>
+                                <li><a href="dashboard2.html"><span class="icon mdi mdi-settings"></span> Dashboard2</a></li>
+                                <li><a href="dashboard3.html"><span class="icon mdi mdi-face"></span> Dashboard3</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
+            </div>
+            <div class="be-content">
+
                 <div class="main-content container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading panel-heading-divider xs-pb-15">Section 1</div>
-                                <div class="panel-body xs-pt-25">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta lacus ipsum, tempus consequat turpis auctor sit amet. Pellentesque porta mollis nisi, pulvinar convallis tellus tristique nec.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta lacus ipsum, tempus consequat turpis auctor sit amet. Pellentesque porta mollis nisi, pulvinar convallis tellus tristique nec.</p>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Dashboard3</div>
+                        <div class="tab-container">
+                            <ul class="nav nav-tabs nav-tabs-danger">
+                                <li class="active"><a href="#arDb1" data-toggle="tab" aria-expanded="false">Dashboard1</a></li>
+                                <li class=""><a href="#arDb2" data-toggle="tab" aria-expanded="false">Dashboard2</a></li>
+                                <li class=""><a href="#arDb3" data-toggle="tab" aria-expanded="true">Dashboard3</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="arDb1" class="tab-pane active">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="panel">
+                                                <div class="panel-heading panel-heading-divider">Section 1</div>
+                                                <div class="panel-body">
+                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
+                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="panel">
+                                                <div class="panel-heading panel-heading-divider">Section 1</div>
+                                                <div class="panel-body">
+                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
+                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading panel-heading-divider xs-pb-15">Section 2</div>
-                                <div class="panel-body xs-pt-25">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta lacus ipsum, tempus consequat turpis auctor sit amet. Pellentesque porta mollis nisi, pulvinar convallis tellus tristique nec.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta lacus ipsum, tempus consequat turpis auctor sit amet. Pellentesque porta mollis nisi, pulvinar convallis tellus tristique nec.</p>
+                                <div id="arDb2" class="tab-pane cont">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="panel">
+                                                <div class="panel-heading panel-heading-divider">Section 1</div>
+                                                <div class="panel-body">
+                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
+                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="panel">
+                                                <div class="panel-heading panel-heading-divider">Section 1</div>
+                                                <div class="panel-body">
+                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
+                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="panel">
+                                                <div class="panel-heading panel-heading-divider">Section 1</div>
+                                                <div class="panel-body">
+                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
+                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading panel-heading-divider xs-pb-15">Section 1</div>
-                                <div class="panel-body xs-pt-25">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta lacus ipsum, tempus consequat turpis auctor sit amet. Pellentesque porta mollis nisi, pulvinar convallis tellus tristique nec.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta lacus ipsum, tempus consequat turpis auctor sit amet. Pellentesque porta mollis nisi, pulvinar convallis tellus tristique nec.</p>
+                                <div id="arDb3" class="tab-pane cont">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="panel">
+                                                <div class="panel-heading panel-heading-divider">Section 1</div>
+                                                <div class="panel-body">
+                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
+                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="panel">
+                                                <div class="panel-heading panel-heading-divider">Section 1</div>
+                                                <div class="panel-body">
+                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
+                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
