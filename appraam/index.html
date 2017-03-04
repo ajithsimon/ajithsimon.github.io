@@ -17,33 +17,34 @@
     </head>
     <body>
         <div class="be-wrapper be-nosidebar-left">
-            <nav class="navbar navbar-default navbar-fixed-top be-top-header">
-                <div class="container-fluid">
-                    <div class="navbar-header"><a href="index.html" class="navbar-brand"></a></div>
-                    <div class="page-title"><span>Dashboard</span></div>
-                    <div class="be-right-navbar">
-                        <ul class="nav navbar-nav navbar-right be-user-nav">
-                            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="assets/img/avatar6.png" alt="Avatar"><span class="user-name">Aparna</span></a>
-                                <ul role="menu" class="dropdown-menu">
-                                    <li><a href="#"><span class="icon mdi mdi-face"></span> Account</a></li>
-                                    <li><a href="#"><span class="icon mdi mdi-settings"></span> Settings</a></li>
-                                    <li><a href="#"><span class="icon mdi mdi-power"></span> Logout</a></li>
-                                </ul>
-                            </li> 
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class=" be-color-header be-color-header-default">
-                <nav class="navbar navbar-default be-top-header">
+            <div class="be-color-header be-color-header-success">
+                <nav class="navbar navbar-default navbar-fixed-top be-top-header">
                     <div class="container-fluid">
+                        <div class="navbar-header"><a href="index.html" class="navbar-brand"></a></div>
+                        <div class="page-title"><span>Dashboard</span></div>
                         <div class="be-right-navbar">
-                            <ul class="nav navbar-nav navbar-left">
-                                <li class="active"><a href="index.html"><span class="icon mdi mdi-home"></span> Dashboard1</a></li>
-                                <li><a href="dashboard2.html"><span class="icon mdi mdi-settings"></span> Dashboard2</a></li>
-                                <li><a href="dashboard3.html"><span class="icon mdi mdi-face"></span> Dashboard3</a></li>
+                            <ul class="nav navbar-nav navbar-right be-user-nav">
+                                <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="assets/img/avatar6.png" alt="Avatar"><span class="user-name">Aparna</span></a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="#"><span class="icon mdi mdi-face"></span> Account</a></li>
+                                        <li><a href="#"><span class="icon mdi mdi-settings"></span> Settings</a></li>
+                                        <li><a href="#"><span class="icon mdi mdi-power"></span> Logout</a></li>
+                                    </ul>
+                                </li> 
                             </ul>
                         </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="">
+                <nav class="navbar navbar-primary be-top-header">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html"><span class="icon mdi mdi-home"></span> Dashboard1</a></li>
+                            <li><a href="dashboard2.html"><span class="icon mdi mdi-settings"></span> Dashboard2</a></li>
+                            <li><a href="dashboard3.html"><span class="icon mdi mdi-face"></span> Dashboard3</a></li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -54,31 +55,62 @@
                         <div class="panel-heading">Dashboard1</div>
                         <div class="tab-container">
                             <ul class="nav nav-tabs nav-tabs-danger">
-                                <li class="active"><a href="#arDb1" data-toggle="tab" aria-expanded="false">Dashboard1</a></li>
-                                <li class=""><a href="#arDb2" data-toggle="tab" aria-expanded="false">Dashboard2</a></li>
-                                <li class=""><a href="#arDb3" data-toggle="tab" aria-expanded="true">Dashboard3</a></li>
+                                <li class="active"><a href="#arDb1" data-toggle="tab" aria-expanded="false"><span class="icon mdi mdi-settings"></span>Dashboard1</a></li>
+                                <li class=""><a href="#arDb2" data-toggle="tab" aria-expanded="false"><span class="icon mdi mdi-settings"></span>Dashboard2</a></li>
+                                <li class=""><a href="#arDb3" data-toggle="tab" aria-expanded="true"><span class="icon mdi mdi-settings"></span>Dashboard3</a></li>
                             </ul>
-                            <div class="tab-content">
+                            <div class="tab-content panel-body-contrast">
                                 <div id="arDb1" class="tab-pane active">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading panel-heading-divider">Basic Form<span class="panel-subtitle">This is sample form layout</span></div>
+                                                <div class="panel-body">
+                                                    <form>
+                                                        <div class="form-group xs-pt-10">
+                                                            <label>Email address</label>
+                                                            <input placeholder="Enter email" class="form-control" type="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Password</label>
+                                                            <input placeholder="Password" class="form-control" type="password">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Confirm Password</label>
+                                                            <input placeholder="Confirm password" class="form-control" type="password">
+                                                        </div>
+                                                        <div class="row xs-pt-15">
+                                                            <div class="col-xs-6">
+                                                                <div class="be-checkbox">
+                                                                    <input id="check1" type="checkbox">
+                                                                    <label for="check1">Remember me</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <p class="text-right">
+                                                                    <button type="submit" class="btn btn-space btn-primary">Submit</button>
+                                                                    <button class="btn btn-space btn-default">Cancel</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
                                             <div class="panel">
                                                 <div class="panel-heading panel-heading-divider">Section 1</div>
                                                 <div class="panel-body">
                                                     <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
                                                     <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="panel">
-                                                <div class="panel-heading panel-heading-divider">Section 1</div>
-                                                <div class="panel-body">
                                                     <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
                                                     <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
+                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. </p>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="row">
                                         <div class="col-md-4">
                                             <div class="panel">
                                                 <div class="panel-heading panel-heading-divider">Section 1</div>

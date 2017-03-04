@@ -8498,11 +8498,11 @@ canvas {
   background-color: #4285f4;
 }
 .be-color-header .be-top-header .navbar-header .navbar-brand {
-  background-image: url("../img/logo-white.png");
+  background-image: url("../img/logo.png");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
   .be-color-header .be-top-header .navbar-header .navbar-brand {
-    background-image: url("../img/logo-white-xx.png");
+    background-image: url("../img/logo.png");
   }
 }
 .be-color-header .be-top-header .page-title {
@@ -20393,3 +20393,9 @@ fieldset[disabled] .full-calendar .fc-button.active {
   }
 }
 /*# sourceMappingURL=/css/style.css.map */
+
+/*Additional over-rides*/
+.tab-content.panel-body-contrast{
+    background: #F5F5F5;
+}
+/*Additional over-rides*/
