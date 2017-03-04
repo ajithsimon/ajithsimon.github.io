@@ -1154,7 +1154,7 @@ html {
 }
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.42857143;
   color: #404040;
   background-color: #EEEEEE;
@@ -20395,6 +20395,9 @@ fieldset[disabled] .full-calendar .fc-button.active {
 /*# sourceMappingURL=/css/style.css.map */
 
 /*Additional over-rides*/
+.navbar.navbar-inverse{
+    margin-bottom: 0;
+}
 .tab-content.panel-body-contrast{
     background: #F5F5F5;
 }
