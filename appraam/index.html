@@ -13,6 +13,7 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <link rel="stylesheet" type="text/css" href="assets/lib/morrisjs/morris.css"/>
         <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     </head>
     <body>
@@ -112,15 +113,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="panel">
-                                                <div class="panel-heading panel-heading-divider">Section 1</div>
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading panel-heading-divider">
+                                                    <span class="title">Chart -  Example</span>
+                                                </div>
                                                 <div class="panel-body">
-                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. </p>
+                                                    <div id="line-chart" style="height: 250px;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -228,12 +227,15 @@
         <script src="assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
         <script src="assets/js/main.js" type="text/javascript"></script>
         <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/lib/raphael/raphael-min.js" type="text/javascript"></script>
+        <script src="assets/lib/morrisjs/morris.min.js" type="text/javascript"></script>
+        <script src="assets/js/app-charts-morris.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(document).ready(function () {
                 //initialize the javascript
                 App.init();
+                App.chartsMorris();
             });
-
         </script>
     </body>
 </html>
