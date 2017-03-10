@@ -21,7 +21,6 @@
             <nav class="navbar navbar-default navbar-fixed-top be-top-header">
                 <div class="container-fluid">
                     <div class="navbar-header"><a href="index.html" class="navbar-brand"></a></div>
-                    <div class="page-title"><span>Appraam Dashboard</span></div>
                     <div class="be-right-navbar">
                         <ul class="nav navbar-nav navbar-right be-user-nav">
                             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="assets/img/avatar6.png" alt="Avatar"><span class="user-name">Aparna</span></a>
@@ -40,12 +39,20 @@
                     <div class="left-sidebar-spacer">
                         <div class="left-sidebar-scroll">
                             <div class="left-sidebar-content">
-                                <ul class="sidebar-elements">
+                                <ul class="sidebar-elements sidebar-dark">
                                     <li><a href="index.html"><span class="icon mdi mdi-home"></span> Hawk eye</a>
                                     </li>
-                                    <li><a href="dashboard.html"><span class="icon mdi mdi-chart"></span> Dashboard</a></li>
-                                    <li><a href="report.html"><span class="icon mdi mdi-assignment"></span> Report</a></li>
-                                    <li><a href="administration.html"><span class="icon mdi mdi-account"></span> Administration</a></li>
+                                    <li><a href="storyboard.html"><span class="icon mdi mdi-chart"></span> Story Board</a></li>
+                                    <li class="active"><a href="report.html"><span class="icon mdi mdi-assignment"></span> Report</a></li>
+                                    <li class="parent"><a href="#"><span class="icon mdi mdi-account"></span> Administration</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="administration.html"><span class="icon mdi mdi-account"></span> Device Management</a></li>
+                                            <li><a href="administration.html"><span class="icon mdi mdi-account"></span> Driver Board</a></li>
+                                            <li><a href="administration.html"><span class="icon mdi mdi-account"></span> Driver Management</a></li>
+                                            <li><a href="administration.html"><span class="icon mdi mdi-account"></span> Tipper Management</a></li>
+                                            <li><a href="administration.html"><span class="icon mdi mdi-account"></span> Configuration</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -59,102 +66,30 @@
                         <div class="panel-heading text-success">Report</div>
                         <div class="tab-container">
                             <ul class="nav nav-tabs nav-tabs-danger">
-                                <li class="active"><a href="#dri-report" data-toggle="tab" aria-expanded="false"><span class="icon mdi mdi-settings"></span>Driver Report</a></li>
-                                <li class=""><a href="#trip-summary" data-toggle="tab" aria-expanded="false"><span class="icon mdi mdi-settings"></span>Trip Summary</a></li>
-                                <li class=""><a href="#vehi-summary" data-toggle="tab" aria-expanded="true"><span class="icon mdi mdi-settings"></span>Vehicle Summary</a></li>
+                                <li class="active"><a href="#trip-perf" data-toggle="tab" aria-expanded="false"><span class="icon mdi mdi-settings"></span>Trip Performance</a></li>
+                                <li class=""><a href="#driv-perf" data-toggle="tab" aria-expanded="false"><span class="icon mdi mdi-settings"></span>Driver Performance</a></li>
+                                <li class=""><a href="#vehi-perf" data-toggle="tab" aria-expanded="true"><span class="icon mdi mdi-settings"></span>Vehicle Performance</a></li>
+                                <li class=""><a href="#title-yet" data-toggle="tab" aria-expanded="true"><span class="icon mdi mdi-settings"></span>Title yet to decide</a></li>
                             </ul>
                             <div class="tab-content panel-body-contrast">
-                                <div id="dri-report" class="tab-pane active">
+                                <div id="trip-perf" class="tab-pane active">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="panel">
-                                                <div class="panel-heading panel-heading-divider">Section 1</div>
-                                                <div class="panel-body">
-                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="panel">
-                                                <div class="panel-heading panel-heading-divider">Section 1</div>
-                                                <div class="panel-body">
-                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="panel">
-                                                <div class="panel-heading panel-heading-divider">Section 1</div>
-                                                <div class="panel-body">
-                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="panel">
-                                                <div class="panel-heading panel-heading-divider">Section 1</div>
-                                                <div class="panel-body">
-                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
-                                <div id="trip-summary" class="tab-pane cont">
+                                <div id="driv-perf" class="tab-pane cont">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="panel">
-                                                <div class="panel-heading panel-heading-divider">Section 1</div>
-                                                <div class="panel-body">
-                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="panel">
-                                                <div class="panel-heading panel-heading-divider">Section 1</div>
-                                                <div class="panel-body">
-                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="panel">
-                                                <div class="panel-heading panel-heading-divider">Section 1</div>
-                                                <div class="panel-body">
-                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
-                                <div id="vehi-summary" class="tab-pane cont">
+                                <div id="vehi-perf" class="tab-pane cont">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="panel">
-                                                <div class="panel-heading panel-heading-divider">Section 1</div>
-                                                <div class="panel-body">
-                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="panel">
-                                                <div class="panel-heading panel-heading-divider">Section 1</div>
-                                                <div class="panel-body">
-                                                    <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
-                                                    <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div id="title-yet" class="tab-pane cont">
+                                    <div class="row">
+                                        
                                     </div>
                                 </div>
                             </div>
