@@ -10458,6 +10458,14 @@ canvas {
   min-width: 20px;
   text-align: center;
 }
+.tools.right-menu{
+    position: relative;
+}
+.tools.right-menu .btn-group{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
 .widget-head .tools .icon + .icon {
   margin-left: 2px;
 }
@@ -16282,7 +16290,7 @@ fieldset[disabled] .btn-color.btn-evernote.active {
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
   border-radius: 3px;
   padding: 7px 0px;
-  min-width: 185px;
+  min-width: 120px;
 }
 .dropdown-menu > li > a {
   font-weight: 400;
@@ -16573,7 +16581,7 @@ fieldset[disabled] .btn-color.btn-evernote.active {
   margin-bottom: -2px;
 }
 .nav-tabs > li a {
-  padding: 12px 20px;
+  padding: 20px;
   margin-right: 0;
   min-width: 60px;
   text-align: center;
