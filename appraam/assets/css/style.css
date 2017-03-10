@@ -9934,7 +9934,7 @@ canvas {
   margin-left: 0;
 }
 .main-content {
-  padding: 15px;
+  padding: 5px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-content {
@@ -10463,8 +10463,8 @@ canvas {
 }
 .tools.right-menu .btn-group{
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 5px;
+    top: 5px;
 }
 .widget-head .tools .icon + .icon {
   margin-left: 2px;
@@ -16581,7 +16581,7 @@ fieldset[disabled] .btn-color.btn-evernote.active {
   margin-bottom: -2px;
 }
 .nav-tabs > li a {
-  padding: 20px;
+  padding: 10px;
   margin-right: 0;
   min-width: 60px;
   text-align: center;
