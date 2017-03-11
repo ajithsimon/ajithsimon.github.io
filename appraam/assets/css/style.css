@@ -20446,4 +20446,7 @@ fieldset[disabled] .full-calendar .fc-button.active {
 .tab-content.panel-body-contrast{
     background: #F5F5F5;
 }
+.mines-select .select2-container--default .select2-selection--single{
+    height: 40px !important;
+}
 /*Additional over-rides*/

@@ -44,15 +44,12 @@
                                     </li>
                                     <li><a href="storyboard.html"><span class="icon mdi mdi-chart"></span> Story Board</a></li>
                                     <li><a href="report.html"><span class="icon mdi mdi-assignment"></span> Report</a></li>
-                                    <li class="parent active"><a href="#"><span class="icon mdi mdi-account"></span> Administration</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="device-management.html"><span class="icon mdi mdi-account"></span> Device Management</a></li>
-                                            <li><a href="device-board.html"><span class="icon mdi mdi-account"></span> Device Board</a></li>
-                                            <li><a href="driver-management.html"><span class="icon mdi mdi-account"></span> Driver Management</a></li>
-                                            <li><a href="tipper-management.html"><span class="icon mdi mdi-account"></span> Tipper Management</a></li>
-                                            <li><a href="configuration.html"><span class="icon mdi mdi-account"></span> Configuration</a></li>
-                                        </ul>
-                                    </li>
+                                    <li class="divider">Administration</li>
+                                    <li><a href="device-management.html"><span class="icon mdi mdi-account"></span> Device Management</a></li>
+                                    <li class="active"><a href="device-board.html"><span class="icon mdi mdi-account"></span> Device Board</a></li>
+                                    <li><a href="driver-management.html"><span class="icon mdi mdi-account"></span> Driver Management</a></li>
+                                    <li><a href="tipper-management.html"><span class="icon mdi mdi-account"></span> Tipper Management</a></li>
+                                    <li><a href="configuration.html"><span class="icon mdi mdi-account"></span> Configuration</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -66,7 +63,7 @@
                         <div class="tab-container">
                             <div class="tools right-menu">
                                 <div class="btn-group btn-hspace">
-                                    <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Select Mines <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                                    <button type="button" data-toggle="dropdown" class="btn btn-space btn-default btn-social dropdown-toggle"><span class="mdi mdi-filter-list"></span></button>
                                     <ul role="menu" class="dropdown-menu">
                                         <li><a href="#">Mine - 1</a></li>
                                         <li><a href="#">Mine - 2</a></li>
@@ -79,13 +76,76 @@
                                 <li class=""><a href="#driver-beacons" data-toggle="tab" aria-expanded="true"><span class="icon mdi mdi-settings"></span>Driver Beacons</a></li>
                             </ul>
                             <div class="tab-content panel-body-contrast">
-                                <div id="vehi-mngmt" class="tab-pane active">
-
+                                <div id="serfs" class="tab-pane active">
+                                    <div class="page-title"><button class="btn btn-space btn-social btn-color btn-evernote"><i class="icon icon-left mdi mdi-plus"></i></button></div>
+                                    <table class="table table-condensed table-hover table-inverted">
+                                        <thead>
+                                            <tr>
+                                                <th>UID</th>
+                                                <th>MAC ID</th>
+                                                <th>Username</th>
+                                                <th>Password</th>
+                                                <th>Upload time</th>
+                                                <th>Protocol</th>
+                                                <th>Sync time</th>
+                                                <th>GPRS conn</th>
+                                                <th class="actions"><i class="icon mdi mdi-edit"></i></th>
+                                                <th class="actions"><i class="icon mdi mdi-refresh"></i></th>
+                                                <th class="actions"><i class="icon mdi mdi-redo"></i></th>
+                                                <th class="actions"><i class="icon mdi mdi-swap"></i></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>12345</td>
+                                                <td>asdf34df12</td>
+                                                <td>aparna</td>
+                                                <td>password</td>
+                                                <td>11:40</td>
+                                                <td>Protocol</td>
+                                                <td>12:50</td>
+                                                <td>None</td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-refresh"></i></button></td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-swap"></i></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div id="dri-mngmt" class="tab-pane cont">
-
+                                <div id="wp-beacons" class="tab-pane cont">
+                                    <table class="table table-condensed table-hover table-inverted">
+                                        <thead>
+                                            <tr>
+                                                <th>Beacon Name</th>
+                                                <th>UUID</th>
+                                                <th>Major</th>
+                                                <th>Minor</th>
+                                                <th>Distance</th>
+                                                <th>RSSI</th>
+                                                <th>TxPower</th>
+                                                <th>Last alive on</th>
+                                                <th class="actions"><i class="icon mdi mdi-edit"></i></th>
+                                                <th class="actions"><i class="icon mdi mdi-redo"></i></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>12345</td>
+                                                <td>asdf34df12</td>
+                                                <td>aparna</td>
+                                                <td>password</td>
+                                                <td>11:40</td>
+                                                <td>Protocol</td>
+                                                <td>12:50</td>
+                                                <td>None</td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div id="dvce-mngmt" class="tab-pane cont">
+                                <div id="driver-beacons" class="tab-pane cont">
 
                                 </div>
                             </div>

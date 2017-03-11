@@ -1,0 +1,30 @@
+var App = (function () {
+  'use strict';
+
+  App.formElements = function( ){
+
+    //Js Code
+    $(".datetimepicker").datetimepicker({
+    	autoclose: true,
+    	componentIcon: '.mdi.mdi-calendar',
+    	navIcons:{
+    		rightIcon: 'mdi mdi-chevron-right',
+    		leftIcon: 'mdi mdi-chevron-left'
+    	}
+    });
+    
+    //Select2
+    $(".mines-select").select2({
+      width: '100%'
+    });
+    $($(".mines-select").select2("container")).addClass("error");
+    //Select2 tags
+    $(".tags").select2({tags: true, width: '100%'});
+
+    //Bootstrap Slider
+    $('.bslider').bootstrapSlider();
+    
+  };
+
+  return App;
+})(App || {});
