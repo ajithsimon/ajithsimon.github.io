@@ -4250,7 +4250,7 @@ tbody.collapse.in {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   z-index: 1000;
   display: none;
   float: left;
@@ -17082,6 +17082,16 @@ fieldset[disabled] .btn-color.btn-evernote.active {
 /*------------------------------------------------------------------
   [Tables]
 */
+.table.table-inverted > thead > tr{
+    background: #616E6F;
+}
+.table.table-inverted tr th.actions .icon,.table.table-inverted tr th.actions .icon:hover{
+    color: white;
+}
+.table.table-inverted > thead > tr > th{
+    font-weight: 400;
+    color: white
+}
 .table > thead > tr > th {
   border-bottom-width: 2px;
   font-weight: 700;
