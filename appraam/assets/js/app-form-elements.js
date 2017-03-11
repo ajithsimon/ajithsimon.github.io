@@ -14,10 +14,9 @@ var App = (function () {
     });
     
     //Select2
-    $(".mines-select").select2({
+    $(".mines-select, .driver-age").select2({
       width: '100%'
     });
-    $($(".mines-select").select2("container")).addClass("error");
     //Select2 tags
     $(".tags").select2({tags: true, width: '100%'});
 

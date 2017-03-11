@@ -13,7 +13,7 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <link rel="stylesheet" type="text/css" href="assets/lib/morrisjs/morris.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/lib/select2/css/select2.min.css"/>
         <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     </head>
     <body>
@@ -78,7 +78,21 @@
                             </ul>
                             <div class="tab-content panel-body-contrast">
                                 <div id="serfs" class="tab-pane active">
-                                    <div class="page-title"><button class="btn btn-space btn-social btn-color btn-evernote"><i class="icon icon-left mdi mdi-plus"></i></button></div>
+                                    <div class="row">
+                                        <div class="page-title">
+                                            <div class="col-sm-2 mine-select">
+                                                <select class="mines-select">
+                                                    <optgroup label="Select Mine">
+                                                        <option value="1">Mine - 1</option>
+                                                        <option value="2">Mine - 2</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-2 pull-right text-right">
+                                                <button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-bp1"><i class="icon icon-left mdi mdi-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <table class="table table-condensed table-hover table-inverted">
                                         <thead>
                                             <tr>
@@ -160,10 +174,14 @@
         <script src="assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
         <script src="assets/js/main.js" type="text/javascript"></script>
         <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/lib/datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+        <script src="assets/lib/select2/js/select2.min.js" type="text/javascript"></script>
+        <script src="assets/js/app-form-elements.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(document).ready(function () {
                 //initialize the javascript
                 App.init();
+                App.formElements();
             });
         </script>
     </body>
