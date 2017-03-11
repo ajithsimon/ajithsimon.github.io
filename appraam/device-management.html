@@ -84,7 +84,7 @@
                             </ul>
                             <div class="tab-content panel-body-contrast">
                                 <div id="serfs" class="tab-pane active">
-                                    <div class="page-title"><button class="btn btn-space btn-social btn-color btn-evernote"><i class="icon icon-left mdi mdi-plus"></i></button></div>
+                                    <div class="page-title"><button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-bp1"><i class="icon icon-left mdi mdi-plus"></i></button></div>
                                     <table class="table table-condensed table-hover table-inverted">
                                         <thead>
                                             <tr>
@@ -159,7 +159,69 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Form Modals-->
+                <div id="form-bp1" tabindex="-1" role="dialog" class="modal fade colored-header colored-header-success">
+                    <div class="modal-dialog custom-width">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close"><span class="mdi mdi-close"></span></button>
+                                <h3 class="modal-title">Add Serfs</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>UID</label>
+                                            <input type="email" placeholder="" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>MAC ID</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Username</label>
+                                            <input type="email" placeholder="" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-margin-y">
+                                    <div class="form-group col-xs-3">
+                                        <label>Upload Time</label>
+                                        <input type="text" placeholder="" class="form-control">
+                                    </div>
+                                    <div class="form-group col-xs-3">
+                                        <label>Protocol</label>
+                                        <input type="text" placeholder="" class="form-control">
+                                    </div>
+                                    <div class="form-group col-xs-3">
+                                        <label>Sync Time</label>
+                                        <input type="text" placeholder="" class="form-control">
+                                    </div>
+                                    <div class="form-group col-xs-3">
+                                        <label>GPRS Conn</label>
+                                        <input type="text" placeholder="" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn btn-default md-close">Cancel</button>
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
