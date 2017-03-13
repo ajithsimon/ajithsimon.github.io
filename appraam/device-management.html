@@ -60,15 +60,15 @@
             <div class="be-content">
                 <div class="main-content container-fluid">
                     <div class="panel panel-default panel-table">
-                        <div class="tools right-menu">
-                            <div class="btn-group btn-hspace">
-                                <button type="button" data-toggle="dropdown" class="btn btn-space btn-default btn-social dropdown-toggle"><span class="mdi mdi-filter-list"></span></button>
-                                <ul role="menu" class="dropdown-menu">
-                                    <li><a href="#">Mine - 1</a></li>
-                                    <li><a href="#">Mine - 2</a></li>
-                                </ul>
+                        <div class="tools">
+                            <div class="col-sm-2 mine-select right-menu">
+                                <select class="mines-select">
+                                    <optgroup>
+                                        <option value="1">Mine - 1</option>
+                                        <option value="2">Mine - 2</option>
+                                    </optgroup>
+                                </select>
                             </div>
-
                         </div>
                         <div class="tab-container">
                             <ul class="nav nav-tabs nav-tabs-primary">
@@ -80,20 +80,19 @@
                                 <div id="serfs" class="tab-pane active">
                                     <div class="row">
                                         <div class="page-title">
-                                            <div class="col-sm-2 mine-select">
-                                                <select class="mines-select">
-                                                    <optgroup label="Select Mine">
-                                                        <option value="1">Mine - 1</option>
-                                                        <option value="2">Mine - 2</option>
-                                                    </optgroup>
-                                                </select>
+                                            <div class="col-sm-3">
+                                                <div class="input-group input-search">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default"><i class="icon mdi mdi-search"></i></button></span>
+                                                    <input placeholder="Search" class="form-control" type="text">
+                                                </div>
                                             </div>
                                             <div class="col-sm-2 pull-right text-right">
-                                            <button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-bp1"><i class="icon icon-left mdi mdi-plus"></i></button>
+                                                <button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-bp1"><i class="icon icon-left mdi mdi-plus"></i></button>
                                             </div>
                                         </div>
                                     </div>
-                                    <table class="table table-condensed table-striped table-hover table-inverted">
+                                    <table class="table table-condensed table-striped table-inverted">
                                         <thead>
                                             <tr>
                                                 <th>UID</th>
@@ -153,25 +152,22 @@
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-swap"></i></button></td>
                                             </tr>
-                                            <tr>
-                                                <td>12345</td>
-                                                <td>asdf34df12</td>
-                                                <td>aparna</td>
-                                                <td>password</td>
-                                                <td>11:40</td>
-                                                <td>Protocol</td>
-                                                <td>12:50</td>
-                                                <td>None</td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-refresh"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-swap"></i></button></td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                                 <div id="wp-beacons" class="tab-pane cont">
-                                    <table class="table table-condensed table-striped table-hover table-inverted">
+                                    <div class="row">
+                                        <div class="page-title">
+                                            <div class="col-sm-3">
+                                                <div class="input-group input-search">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default"><i class="icon mdi mdi-search"></i></button></span>
+                                                    <input placeholder="Search" class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="table table-condensed table-striped table-inverted">
                                         <thead>
                                             <tr>
                                                 <th>Beacon Name</th>
@@ -234,7 +230,7 @@
                     </div>
                 </div>
                 <!--Form Modals-->
-                <div id="form-bp1" tabindex="-1" role="dialog" class="modal fade colored-header colored-header-success">
+                <div id="form-bp1" tabindex="-1" role="dialog" class="modal fade">
                     <div class="modal-dialog custom-width">
                         <div class="modal-content">
                             <div class="modal-header">

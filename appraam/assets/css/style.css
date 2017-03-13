@@ -2391,7 +2391,7 @@ th {
     border-bottom-width: 2px;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
-    background-color: #f5f5f5;
+    background-color: #F9F9F9;
 }
 .table-hover > tbody > tr:hover {
     background-color: #f0f0f0;
@@ -4908,6 +4908,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
     .navbar-header {
         float: left;
+        text-align: center;
+    }
+    .navbar-header p{
+        font-size: 10px;
+        margin: 0;
     }
 }
 .navbar-collapse {
@@ -8240,13 +8245,13 @@ canvas {
     padding: 0;
 }
 .be-top-header .navbar-header .navbar-brand {
-    line-height: 60px;
-    height: 60px;
+    line-height: 40px;
+    height: 40px;
     width: 230px;
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
-    background-position: 20px center;
-    background-size: 100px;
+    background-position: center;
+    background-size: 75px;
     padding: 0 20px;
     margin: 0;
 }
@@ -9143,7 +9148,7 @@ canvas {
 .be-left-sidebar .sidebar-elements > li > a {
     display: block;
     padding: 0 20px;
-    color: #646464;
+    color: #8da0aa;
     font-size: 14px;
     line-height: 38px;
     text-overflow: ellipsis;
@@ -9217,6 +9222,7 @@ canvas {
     font-weight: 400;
     color: #0072BC;
     letter-spacing: 0.2px;
+    background-color: #e7e7e7;
 }
 .be-left-sidebar .sidebar-elements > li.active > a > span {
     color: #0072BC;
@@ -10463,13 +10469,11 @@ custom dark sidebar */
     min-width: 20px;
     text-align: center;
 }
-.tools.right-menu{
-    position: relative;
-}
-.tools.right-menu .btn-group{
+
+.tools .right-menu{
     position: absolute;
     right: 5px;
-    top: 5px;
+    top: 10px;
 }
 .widget-head .tools .icon + .icon {
     margin-left: 2px;
@@ -17087,14 +17091,14 @@ fieldset[disabled] .btn-color.btn-evernote.active {
     margin-top: 10px;
 }
 .table.table-inverted > thead > tr{
-    background: #616E6F;
+    background: #F9FAFE;
 }
 .table.table-inverted tr th.actions .icon,.table.table-inverted tr th.actions .icon:hover{
     color: white;
 }
 .table.table-inverted > thead > tr > th{
-    font-weight: 400;
-    color: white
+    font-weight: 500;
+    color: #333;
 }
 .table > thead > tr > th {
     border-bottom-width: 2px;
@@ -17109,6 +17113,7 @@ fieldset[disabled] .btn-color.btn-evernote.active {
 .table > tbody > tr > td {
     font-weight: 400;
     vertical-align: middle;
+    color: #8da0aa
 }
 .table-condensed > thead > tr > th {
     padding-top: 10px;
@@ -17847,30 +17852,30 @@ label {
     border-radius: 0;
     display: block;
     font-size: 13px;
+    padding-left: 35px;
 }
 .input-search input:focus {
     background-color: transparent;
 }
 .input-search .input-group-btn {
     position: absolute;
-    right: 0;
     display: block;
     width: auto;
     top: 1px;
-    right: 1px;
+    left: 1px;
     z-index: 3;
 }
 .input-search .input-group-btn button {
     box-shadow: none;
     border: none;
-    height: 46px;
+    height: 38px;
 }
 .input-search .input-group-btn button:active {
     background-color: transparent;
     box-shadow: none;
 }
 .input-search .input-group-btn button .icon {
-    font-size: 25px;
+    font-size: 18px;
     color: #737373;
 }
 .input-search .input-group-btn button:hover .icon {
@@ -20451,16 +20456,15 @@ fieldset[disabled] .full-calendar .fc-button.active {
     background: #F5F5F5;
 }
 .mine-select .select2-container--default .select2-selection--single .select2-selection__arrow b::after {
-    line-height: 40px;
+    line-height: 30px;
 }
 .mine-select .select2-container--default .select2-selection--single, 
 .mine-select .select2-container--default .select2-selection--single .select2-selection__rendered,
 .mine-select .select2-container--default .select2-selection--single .select2-selection__arrow{
-    height: 40px !important;
-    line-height: 40px;
+    height: 30px;
+    line-height: 30px;
 }
 .marq-text{
     width: 70%;
 }
-
 /*Additional over-rides*/

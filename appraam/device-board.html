@@ -62,15 +62,16 @@
                 <div class="main-content container-fluid">
                     <div class="panel panel-default panel-table">
                         <div class="tab-container">
-                            <div class="tools right-menu">
-                                <div class="btn-group btn-hspace">
-                                    <button type="button" data-toggle="dropdown" class="btn btn-space btn-default btn-social dropdown-toggle"><span class="mdi mdi-filter-list"></span></button>
-                                    <ul role="menu" class="dropdown-menu">
-                                        <li><a href="#">Mine - 1</a></li>
-                                        <li><a href="#">Mine - 2</a></li>
-                                    </ul>
-                                </div>
+                            <div class="tools">
+                            <div class="col-sm-2 mine-select right-menu">
+                                <select class="mines-select">
+                                    <optgroup>
+                                        <option value="1">Mine - 1</option>
+                                        <option value="2">Mine - 2</option>
+                                    </optgroup>
+                                </select>
                             </div>
+                        </div>
                             <ul class="nav nav-tabs nav-tabs-primary">
                                 <li class="active"><a href="#serfs" data-toggle="tab" aria-expanded="false"><span class="icon mdi mdi-settings"></span>Serfs</a></li>
                                 <li class=""><a href="#wp-beacons" data-toggle="tab" aria-expanded="false"><span class="icon mdi mdi-settings"></span>Way Point Beacons</a></li>
@@ -80,20 +81,16 @@
                                 <div id="serfs" class="tab-pane active">
                                     <div class="row">
                                         <div class="page-title">
-                                            <div class="col-sm-2 mine-select">
-                                                <select class="mines-select">
-                                                    <optgroup label="Select Mine">
-                                                        <option value="1">Mine - 1</option>
-                                                        <option value="2">Mine - 2</option>
-                                                    </optgroup>
-                                                </select>
-                                            </div>
-                                            <div class="col-sm-2 pull-right text-right">
-                                                <button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-bp1"><i class="icon icon-left mdi mdi-plus"></i></button>
+                                            <div class="col-sm-3">
+                                                <div class="input-group input-search">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default"><i class="icon mdi mdi-search"></i></button></span>
+                                                    <input placeholder="Search" class="form-control" type="text">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <table class="table table-condensed table-striped table-hover table-inverted">
+                                    <table class="table table-condensed table-striped table-inverted">
                                         <thead>
                                             <tr>
                                                 <th>UID</th>
@@ -157,7 +154,18 @@
                                     </table>
                                 </div>
                                 <div id="wp-beacons" class="tab-pane cont">
-                                    <table class="table table-condensed table-striped table-hover table-inverted">
+                                    <div class="row">
+                                        <div class="page-title">
+                                            <div class="col-sm-3">
+                                                <div class="input-group input-search">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default"><i class="icon mdi mdi-search"></i></button></span>
+                                                    <input placeholder="Search" class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="table table-condensed table-striped table-inverted">
                                         <thead>
                                             <tr>
                                                 <th>Beacon Name</th>
