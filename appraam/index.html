@@ -22,10 +22,11 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a href="index.html" class="navbar-brand"></a>
-                        <p>Powerd by appraam Labs</p>
+                        <p>Powerd by <a href="http://www.appraamlabs.com/" target="_blank">appraam Labs</a></p>
                     </div>
                     <div class="be-right-navbar">
                         <ul class="nav navbar-nav navbar-right be-user-nav">
+
                             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="assets/img/avatar6.png" alt="Avatar"><span class="user-name">Aparna</span></a>
                                 <ul role="menu" class="dropdown-menu">
                                     <li><a href="#"><span class="icon mdi mdi-face"></span> Account</a></li>
@@ -34,8 +35,17 @@
                                 </ul>
                             </li> 
                         </ul>
-                        <div class="page-title no-pad marq-text"><marquee>Lorem ipsum dolar sit amet . Lorem ipsum dolar sit amet Lorem ipsum dolar sit amet . Lorem ipsum dolar sit amet . </marquee></div>
+                        <div class="page-title no-pad marq-text">
+                            <marquee>
+                                    <span>Lorem ipsum dolar sit amet  . Lorem ipsum dolar sit amet</span>
+                                    <span>Lorem ipsum dolar sit amet Lorem ipsum dolar sit amet</span>
+                            </marquee>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="javascript:void(0)" onclick="toggleFullScreen(document.body)"><span class="icon mdi mdi-fullscreen"></span></a></li>
+                        </ul>
                     </div>
+
                 </div>
             </nav>
             <div class="be-left-sidebar">
@@ -58,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="copyrights" style="position: absolute">Copyrights 2017</p>
+                    <p class="copyrights">Copyrights © 2017</p>
                 </div>
             </div>
             <div class="be-content">
@@ -88,10 +98,10 @@
         <script src="assets/js/main.js" type="text/javascript"></script>
         <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
         <script type="text/javascript">
-            $(document).ready(function () {
-                //initialize the javascript
-                App.init();
-            });
+                            $(document).ready(function () {
+                                //initialize the javascript
+                                App.init();
+                            });
         </script>
     </body>
 </html>

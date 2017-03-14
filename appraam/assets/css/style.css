@@ -8219,6 +8219,7 @@ canvas {
 .be-wrapper {
     min-height: 100%;
     padding-top: 61px;
+    background: #eeeeee;
 }
 @media (max-width: 767px) {
     .be-wrapper {
@@ -8298,7 +8299,7 @@ canvas {
 .be-top-header .navbar-nav > li > a {
     line-height: 60px;
     color: #5a5a5a;
-    font-size: 14px;
+    font-size: 20px;
     padding: 0 18px;
     outline: none;
 }
@@ -20466,5 +20467,19 @@ fieldset[disabled] .full-calendar .fc-button.active {
 }
 .marq-text{
     width: 70%;
+}
+.marq-text span{
+    position: relative;
+    padding-left: 15px;
+}
+.marq-text span:before{
+/*    list-style-image: url(../img/avatar6.png);*/
+content: "/";
+position: absolute;
+left: 5px;
+}
+.copyrights{
+    margin: 0;
+    padding: 10px;
 }
 /*Additional over-rides*/
