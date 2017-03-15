@@ -8049,7 +8049,7 @@ html {
 }
 body {
     padding: 0;
-    background-color: #EEEEEE;
+    background-color: #FAFCFE;
     height: 100%;
 }
 a:hover,
@@ -8219,7 +8219,7 @@ canvas {
 .be-wrapper {
     min-height: 100%;
     padding-top: 61px;
-    background: #eeeeee;
+    background: #FAFCFE;
 }
 @media (max-width: 767px) {
     .be-wrapper {
@@ -8230,7 +8230,7 @@ canvas {
         [Top header]
 */
 .be-top-header {
-    background-color: #ffffff;
+    background-color: #03A9F4;
     border: 0;
     margin-bottom: 0;
     border-bottom: 1px solid #e6e6e6;
@@ -8247,7 +8247,7 @@ canvas {
 }
 .be-top-header .navbar-header .navbar-brand {
     line-height: 40px;
-    height: 40px;
+    height: 60px;
     width: 230px;
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
@@ -8298,7 +8298,7 @@ canvas {
 }
 .be-top-header .navbar-nav > li > a {
     line-height: 60px;
-    color: #5a5a5a;
+    color: #fff;
     font-size: 20px;
     padding: 0 18px;
     outline: none;
@@ -17095,7 +17095,7 @@ fieldset[disabled] .btn-color.btn-evernote.active {
     background: #F9FAFE;
 }
 .table.table-inverted tr th.actions .icon,.table.table-inverted tr th.actions .icon:hover{
-    color: white;
+    color: #333;
 }
 .table.table-inverted > thead > tr > th{
     font-weight: 500;
@@ -20467,19 +20467,25 @@ fieldset[disabled] .full-calendar .fc-button.active {
 }
 .marq-text{
     width: 70%;
+    color: white;
 }
 .marq-text span{
     position: relative;
     padding-left: 15px;
 }
-.marq-text span:before{
-/*    list-style-image: url(../img/avatar6.png);*/
-content: "/";
-position: absolute;
-left: 5px;
-}
+
 .copyrights{
     margin: 0;
     padding: 10px;
+    font-size: 8px;
+}
+.copyrights img{
+    width: 90px;
+}
+.modal-body .panel-heading{
+    margin: 0 0 15px;
+}
+.modal-header .md-help{
+    margin-right: 12px;
 }
 /*Additional over-rides*/

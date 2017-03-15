@@ -46,9 +46,10 @@
                                     </li>
                                     <li><a href="storyboard.html"><span class="icon mdi mdi-chart"></span> Story Board</a></li>
                                     <li><a href="report.html"><span class="icon mdi mdi-assignment"></span> Report</a></li>
+                                    <li class="divider">Monitoring</li>
+                                    <li><a href="device-board.html"><span class="icon mdi mdi-account"></span> Device Board</a></li>
                                     <li class="divider">Administration</li>
                                     <li class="active"><a href="device-management.html"><span class="icon mdi mdi-account"></span> Device Management</a></li>
-                                    <li><a href="device-board.html"><span class="icon mdi mdi-account"></span> Device Board</a></li>
                                     <li><a href="driver-management.html"><span class="icon mdi mdi-account"></span> Driver Management</a></li>
                                     <li><a href="tipper-management.html"><span class="icon mdi mdi-account"></span> Tipper Management</a></li>
                                     <li><a href="configuration.html"><span class="icon mdi mdi-account"></span> Configuration</a></li>
@@ -56,6 +57,7 @@
                             </div>
                         </div>
                     </div>
+                    <p class="copyrights">Powerd by <a href="http://www.appraamlabs.com/" target="_blank"><img src="assets/img/copyrights.png" alt="appraam labs"></a>Copyrights © 2017</p>
                 </div>
             </div>
             <div class="be-content">
@@ -82,10 +84,8 @@
                                     <div class="row">
                                         <div class="page-title">
                                             <div class="col-sm-3">
-                                                <div class="input-group input-search">
-                                                    <span class="input-group-btn">
-                                                        <button class="btn btn-default"><i class="icon mdi mdi-search"></i></button></span>
-                                                    <input placeholder="Search" class="form-control" type="text">
+                                                <div class="input-group">
+                                                    <input placeholder="Search.." class="form-control" type="text">
                                                 </div>
                                             </div>
                                             <div class="col-sm-2 pull-right text-right">
@@ -93,17 +93,19 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <table class="table table-condensed table-striped table-inverted">
+                                    <table class="table table-condensed table-bordered table-striped table-inverted">
                                         <thead>
                                             <tr>
                                                 <th>UID</th>
+                                                <th>Device Name</th>
                                                 <th>MAC ID</th>
-                                                <th>Username</th>
-                                                <th>Password</th>
-                                                <th>Upload time</th>
-                                                <th>Protocol</th>
-                                                <th>Sync time</th>
-                                                <th>GPRS conn</th>
+                                                <th>FTP Interval</th>
+                                                <th>Sync Interval</th>
+                                                <th>OBD Interval</th>
+                                                <th>UUID</th>
+                                                <th>Major</th>
+                                                <th>Minor</th>
+                                                <th>Status</th>
                                                 <th class="actions"><i class="icon mdi mdi-edit"></i></th>
                                                 <th class="actions"><i class="icon mdi mdi-refresh"></i></th>
                                                 <th class="actions"><i class="icon mdi mdi-redo"></i></th>
@@ -118,7 +120,9 @@
                                                 <td>password</td>
                                                 <td>11:40</td>
                                                 <td>Protocol</td>
+                                                <td>Protocol</td>
                                                 <td>12:50</td>
+                                                <td>None</td>
                                                 <td>None</td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-refresh"></i></button></td>
@@ -132,7 +136,9 @@
                                                 <td>password</td>
                                                 <td>11:40</td>
                                                 <td>Protocol</td>
+                                                <td>Protocol</td>
                                                 <td>12:50</td>
+                                                <td>None</td>
                                                 <td>None</td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-refresh"></i></button></td>
@@ -146,7 +152,9 @@
                                                 <td>password</td>
                                                 <td>11:40</td>
                                                 <td>Protocol</td>
+                                                <td>Protocol</td>
                                                 <td>12:50</td>
+                                                <td>None</td>
                                                 <td>None</td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-refresh"></i></button></td>
@@ -160,36 +168,33 @@
                                     <div class="row">
                                         <div class="page-title">
                                             <div class="col-sm-3">
-                                                <div class="input-group input-search">
-                                                    <span class="input-group-btn">
-                                                        <button class="btn btn-default"><i class="icon mdi mdi-search"></i></button></span>
-                                                    <input placeholder="Search" class="form-control" type="text">
+                                                <div class="input-group">
+                                                    <input placeholder="Search.." class="form-control" type="text">
                                                 </div>
+                                            </div>
+                                            <div class="col-sm-2 pull-right text-right">
+                                                <button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-wpb"><i class="icon icon-left mdi mdi-plus"></i></button>
                                             </div>
                                         </div>
                                     </div>
-                                    <table class="table table-condensed table-striped table-inverted">
+                                    <table class="table table-condensed table-bordered table-striped table-inverted">
                                         <thead>
                                             <tr>
-                                                <th>Beacon Name</th>
                                                 <th>UUID</th>
                                                 <th>Major</th>
                                                 <th>Minor</th>
-                                                <th>Distance</th>
-                                                <th>RSSI</th>
-                                                <th>TxPower</th>
-                                                <th>Last alive on</th>
+                                                <th>Beacon Period</th>
+                                                <th>Tx Power</th>
+                                                <th>Status</th>
                                                 <th class="actions"><i class="icon mdi mdi-edit"></i></th>
                                                 <th class="actions"><i class="icon mdi mdi-redo"></i></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>12345</td>
                                                 <td>asdf34df12</td>
                                                 <td>aparna</td>
                                                 <td>password</td>
-                                                <td>11:40</td>
                                                 <td>Protocol</td>
                                                 <td>12:50</td>
                                                 <td>None</td>
@@ -197,11 +202,9 @@
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
                                             </tr>
                                             <tr>
-                                                <td>12345</td>
                                                 <td>asdf34df12</td>
                                                 <td>aparna</td>
                                                 <td>password</td>
-                                                <td>11:40</td>
                                                 <td>Protocol</td>
                                                 <td>12:50</td>
                                                 <td>None</td>
@@ -209,11 +212,9 @@
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
                                             </tr>
                                             <tr>
-                                                <td>12345</td>
                                                 <td>asdf34df12</td>
                                                 <td>aparna</td>
                                                 <td>password</td>
-                                                <td>11:40</td>
                                                 <td>Protocol</td>
                                                 <td>12:50</td>
                                                 <td>None</td>
@@ -224,91 +225,325 @@
                                     </table>
                                 </div>
                                 <div id="driver-beacons" class="tab-pane cont">
-
+                                    <div class="row">
+                                        <div class="page-title">
+                                            <div class="col-sm-3">
+                                                <div class="input-group">
+                                                    <input placeholder="Search.." class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 pull-right text-right">
+                                                <button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-idb"><i class="icon icon-left mdi mdi-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="table table-condensed table-bordered table-striped table-inverted">
+                                        <thead>
+                                            <tr>
+                                                <th>UUID</th>
+                                                <th>Major</th>
+                                                <th>Minor</th>
+                                                <th>Beacon Period</th>
+                                                <th>Tx Power</th>
+                                                <th>Status</th>
+                                                <th class="actions"><i class="icon mdi mdi-edit"></i></th>
+                                                <th class="actions"><i class="icon mdi mdi-redo"></i></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>asdf34df12</td>
+                                                <td>aparna</td>
+                                                <td>password</td>
+                                                <td>Protocol</td>
+                                                <td>12:50</td>
+                                                <td>None</td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>asdf34df12</td>
+                                                <td>aparna</td>
+                                                <td>password</td>
+                                                <td>Protocol</td>
+                                                <td>12:50</td>
+                                                <td>None</td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>asdf34df12</td>
+                                                <td>aparna</td>
+                                                <td>password</td>
+                                                <td>Protocol</td>
+                                                <td>12:50</td>
+                                                <td>None</td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
+                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--Form Modals-->
+                
+                <!--Form add serfs-->
                 <div id="form-bp1" tabindex="-1" role="dialog" class="modal fade">
-                    <div class="modal-dialog custom-width">
+                    <div class="modal-dialog full-width">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close"><span class="mdi mdi-close"></span></button>
+                                <a href="#" class="close md-help"><span class="mdi mdi-help"></span></a>
                                 <h3 class="modal-title">Add Serfs</h3>
                             </div>
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>UID</label>
-                                            <input type="text" placeholder="" class="form-control">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h4 class="panel-heading panel-heading-divider">Basic Parameters</h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>UID</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>Device Name</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>MAC ID</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+
                                     <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>MAC ID</label>
-                                            <input type="text" placeholder="" class="form-control">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h4 class="panel-heading panel-heading-divider">Serfs Beacon</h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>UUID</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>Major</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>Minor</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h4 class="panel-heading panel-heading-divider">Data Sync</h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>GPRS Connection</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>Sync Interval</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>ODB Sync Interval</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h4 class="panel-heading panel-heading-divider">ODB Configuration</h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>ODB Protocol</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Username</label>
-                                            <input type="email" placeholder="" class="form-control">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h4 class="panel-heading panel-heading-divider">FTP</h4>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>Host</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>Username</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>Password</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-lg btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--form wp beacon-->
+                <div id="form-wpb" tabindex="-1" role="dialog" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><span class="mdi mdi-close"></span></button>
+                                <a href="#" class="close md-help"><span class="mdi mdi-help"></span></a>
+                                <h4 class="modal-title">Add Waypoint Beacons</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-4">
                                         <div class="form-group">
-                                            <label>Password</label>
+                                            <label>UUID</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label>Major</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label>Minor</label>
                                             <input type="text" placeholder="" class="form-control">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row no-margin-y">
-                                    <div class="form-group col-xs-3">
-                                        <label>Upload Time</label>
-                                        <input type="text" placeholder="" class="form-control">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label>Beacon Period</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
                                     </div>
-                                    <div class="form-group col-xs-3">
-                                        <label>Protocol</label>
-                                        <input type="text" placeholder="" class="form-control">
-                                    </div>
-                                    <div class="form-group col-xs-3">
-                                        <label>Sync Time</label>
-                                        <input type="text" placeholder="" class="form-control">
-                                    </div>
-                                    <div class="form-group col-xs-3">
-                                        <label>GPRS Conn</label>
-                                        <input type="text" placeholder="" class="form-control">
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label>Tx Power</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" data-dismiss="modal" class="btn btn-default md-close">Cancel</button>
-                                <button type="button" class="btn btn-primary">Submit</button>
+                                <button type="button" class="btn btn-lg btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--form ID beacon-->
+                <div id="form-idb" tabindex="-1" role="dialog" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><span class="mdi mdi-close"></span></button>
+                                <a href="#" class="close md-help"><span class="mdi mdi-help"></span></a>
+                                <h4 class="modal-title">Add Driver Beacons</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label>UUID</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label>Major</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label>Minor</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label>Beacon Period</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label>Tx Power</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-lg btn-primary">Submit</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-        <script src="assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
-        <script src="assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
-        <script src="assets/js/main.js" type="text/javascript"></script>
-        <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="assets/lib/datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
-        <script src="assets/lib/select2/js/select2.min.js" type="text/javascript"></script>
-        <script src="assets/js/app-form-elements.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                //initialize the javascript
-                App.init();
-                App.formElements();
-            });
-        </script>
+            <script src="assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
+            <script src="assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+            <script src="assets/js/main.js" type="text/javascript"></script>
+            <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+            <script src="assets/lib/datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+            <script src="assets/lib/select2/js/select2.min.js" type="text/javascript"></script>
+            <script src="assets/js/app-form-elements.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    //initialize the javascript
+                                    App.init();
+                                    App.formElements();
+                                });
+            </script>
     </body>
 </html>
