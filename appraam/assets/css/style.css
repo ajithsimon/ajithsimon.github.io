@@ -85,6 +85,17 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+*{
+    text-rendering: optimizeLegibility;
+    font-smoothing:antialiased;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%; 
+    -moz-text-size-adjust: 100%;
+}
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -8249,7 +8260,7 @@ canvas {
     line-height: 40px;
     height: 60px;
     width: 230px;
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logo.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 75px;
@@ -8507,11 +8518,11 @@ canvas {
     background-color: #4285f4;
 }
 .be-color-header .be-top-header .navbar-header .navbar-brand {
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logo.svg");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
     .be-color-header .be-top-header .navbar-header .navbar-brand {
-        background-image: url("../img/logo.png");
+        background-image: url("../img/logo.svg");
     }
 }
 .be-color-header .be-top-header .page-title {
@@ -11613,7 +11624,7 @@ li.L9 {
     .invoice-logo {
         height: 27px;
         width: 102px;
-        background-image: url("../img/logo.png");
+        background-image: url("../img/logo.svg");
     }
 }
 @media (max-width: 480px) {
