@@ -14,7 +14,7 @@ var App = (function () {
     });
     
     //Select2
-    $(".mines-select, .driver-age").select2({
+    $(".mines-select").select2({
       width: '100%'
     });
     //Select2 tags
