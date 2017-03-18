@@ -20481,7 +20481,20 @@ fieldset[disabled] .full-calendar .fc-button.active {
     margin: 0 0 10px;
     padding: 10px 10px 10px 0;
 }
+.be-offcanvas-btn{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 15px;
+    padding: 10px 0;
+}
+.be-offcanvas-btn:hover,.be-offcanvas-btn:focus{
+    color: white;
+}
 .modal-header .md-help{
     margin-right: 12px;
+}
+.no-l-margin{
+    margin-left: 0;
 }
 /*Additional over-rides*/

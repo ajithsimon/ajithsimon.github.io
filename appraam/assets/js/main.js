@@ -1,6 +1,12 @@
 var App = (function () {
   'use strict';
-
+  function offCanvasMenu(){
+      $('.be-offcanvas-btn').on('click', function(){
+          $('.be-content').toggleClass('no-l-margin');
+          $('.be-left-sidebar').toggle();
+      });
+  };
+  
   //Basic Config
   var config = {
     assetsPath: 'assets',
@@ -310,7 +316,9 @@ var App = (function () {
 
       /*FastClick on mobile*/
         FastClick.attach(document.body);
-
+        
+//        offcanvas menu
+        offCanvasMenu();
       /*Left Sidebar*/
         leftSidebarInit();
       
