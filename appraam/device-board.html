@@ -66,15 +66,15 @@
                     <div class="panel panel-default panel-table">
                         <div class="tab-container">
                             <div class="tools">
-                            <div class="col-sm-2 mine-select right-menu">
-                                <select class="mines-select">
-                                    <optgroup>
-                                        <option value="1">Mine - 1</option>
-                                        <option value="2">Mine - 2</option>
-                                    </optgroup>
-                                </select>
+                                <div class="col-sm-2 mine-select right-menu">
+                                    <select class="mines-select">
+                                        <optgroup>
+                                            <option value="1">Mine - 1</option>
+                                            <option value="2">Mine - 2</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
                             <ul class="nav nav-tabs nav-tabs-primary">
                                 <li class="active"><a href="#serfs" data-toggle="tab" aria-expanded="false"><span class="icon mdi mdi-settings"></span>Serfs</a></li>
                                 <li class=""><a href="#wp-beacons" data-toggle="tab" aria-expanded="false"><span class="icon mdi mdi-settings"></span>Way Point Beacons</a></li>
@@ -89,26 +89,25 @@
                                                     <input placeholder="Search.." class="form-control" type="text">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-2 pull-right text-right">
-                                                <button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-bp1"><i class="icon icon-left mdi mdi-plus"></i></button>
-                                            </div>
                                         </div>
                                     </div>
-                                    <table class="table table-condensed table-striped table-inverted">
+                                    <table class="table table-condensed table-striped table-inverted table-bordered">
                                         <thead>
                                             <tr>
-                                                <th>UID</th>
-                                                <th>MAC ID</th>
+                                                <th>Mine</th>
+                                                <th>Vehicle No</th>
                                                 <th>Username</th>
-                                                <th>Password</th>
-                                                <th>Upload time</th>
-                                                <th>Protocol</th>
-                                                <th>Sync time</th>
-                                                <th>GPRS conn</th>
+                                                <th>Unique ID</th>
+                                                <th>Device Name</th>
+                                                <th>Mac ID</th>
+                                                <th>FTP Interval</th>
+                                                <th>Sync Interval</th>
+                                                <th>ODB Interval</th>
+                                                <th>Last Data Received</th>
+                                                <th>Data Balance in MB</th>
+                                                <th>Status</th>
                                                 <th class="actions"><i class="icon mdi mdi-edit"></i></th>
                                                 <th class="actions"><i class="icon mdi mdi-refresh"></i></th>
-                                                <th class="actions"><i class="icon mdi mdi-redo"></i></th>
-                                                <th class="actions"><i class="icon mdi mdi-swap"></i></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -121,10 +120,12 @@
                                                 <td>Protocol</td>
                                                 <td>12:50</td>
                                                 <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-refresh"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-swap"></i></button></td>
                                             </tr>
                                             <tr>
                                                 <td>12345</td>
@@ -135,10 +136,12 @@
                                                 <td>Protocol</td>
                                                 <td>12:50</td>
                                                 <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-refresh"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-swap"></i></button></td>
                                             </tr>
                                             <tr>
                                                 <td>12345</td>
@@ -149,10 +152,12 @@
                                                 <td>Protocol</td>
                                                 <td>12:50</td>
                                                 <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-refresh"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-swap"></i></button></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -165,24 +170,19 @@
                                                     <input placeholder="Search.." class="form-control" type="text">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-2 pull-right text-right">
-                                                <button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-bp1"><i class="icon icon-left mdi mdi-plus"></i></button>
-                                            </div>
                                         </div>
                                     </div>
-                                    <table class="table table-condensed table-striped table-inverted">
+                                    <table class="table table-condensed table-striped table-inverted table-bordered">
                                         <thead>
                                             <tr>
-                                                <th>Beacon Name</th>
+                                                <th>Mine</th>
+                                                <th>Mac ID</th>
                                                 <th>UUID</th>
-                                                <th>Major</th>
-                                                <th>Minor</th>
-                                                <th>Distance</th>
-                                                <th>RSSI</th>
+                                                <th>Longitude</th>
+                                                <th>Latitude</th>
+                                                <th>Beacon Period</th>
                                                 <th>TxPower</th>
-                                                <th>Last alive on</th>
-                                                <th class="actions"><i class="icon mdi mdi-edit"></i></th>
-                                                <th class="actions"><i class="icon mdi mdi-redo"></i></th>
+                                                <th>Last Detected</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -195,8 +195,6 @@
                                                 <td>Protocol</td>
                                                 <td>12:50</td>
                                                 <td>None</td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
                                             </tr>
                                             <tr>
                                                 <td>12345</td>
@@ -207,20 +205,6 @@
                                                 <td>Protocol</td>
                                                 <td>12:50</td>
                                                 <td>None</td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>12345</td>
-                                                <td>asdf34df12</td>
-                                                <td>aparna</td>
-                                                <td>password</td>
-                                                <td>11:40</td>
-                                                <td>Protocol</td>
-                                                <td>12:50</td>
-                                                <td>None</td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
-                                                <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -233,32 +217,70 @@
                                                     <input placeholder="Search.." class="form-control" type="text">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-2 pull-right text-right">
-                                                <button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-bp1"><i class="icon icon-left mdi mdi-plus"></i></button>
-                                            </div>
                                         </div>
                                     </div>
+                                    <table class="table table-condensed table-striped table-inverted table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Mine</th>
+                                                <th>Mac ID</th>
+                                                <th>UUID</th>
+                                                <th>Longitude</th>
+                                                <th>Latitude</th>
+                                                <th>Beacon Period</th>
+                                                <th>TxPower</th>
+                                                <th>Last Detected</th>
+                                                <th>Current Driving Vehicle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>12345</td>
+                                                <td>asdf34df12</td>
+                                                <td>aparna</td>
+                                                <td>password</td>
+                                                <td>11:40</td>
+                                                <td>Protocol</td>
+                                                <td>12:50</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12345</td>
+                                                <td>asdf34df12</td>
+                                                <td>aparna</td>
+                                                <td>password</td>
+                                                <td>11:40</td>
+                                                <td>Protocol</td>
+                                                <td>12:50</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-        <script src="assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
-        <script src="assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
-        <script src="assets/js/main.js" type="text/javascript"></script>
-        <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="assets/lib/datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
-        <script src="assets/lib/select2/js/select2.min.js" type="text/javascript"></script>
-        <script src="assets/js/app-form-elements.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                //initialize the javascript
-                App.init();
-                App.formElements();
-            });
-        </script>
-    </body>
+    </div>
+
+</div>
+<script src="assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/main.js" type="text/javascript"></script>
+<script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/lib/datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<script src="assets/lib/select2/js/select2.min.js" type="text/javascript"></script>
+<script src="assets/js/app-form-elements.js" type="text/javascript"></script>
+<script type="text/javascript">
+                        $(document).ready(function () {
+                            //initialize the javascript
+                            App.init();
+                            App.formElements();
+                        });
+</script>
+</body>
 </html>
