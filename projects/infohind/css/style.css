@@ -41,21 +41,12 @@ a:hover,a:focus,a:active{
 }
 
 /* Home Page */
-.main-header .navbar-default .navbar-brand{
-}
+
 .navbar{
     border-radius: 0;
     border-bottom: 0;
 }
-.navbar-default{
-    margin-bottom: 0;
-    background: white;
-}
-.main-header .navbar-default .nav > li > a{
-    color: #4d4d4d;
-    letter-spacing: 0.4px;
-    font-size: 15px;
-}
+
 .main-header .nav > li > a{
     padding: 15px 10px;
 }

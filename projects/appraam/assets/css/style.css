@@ -18695,7 +18695,7 @@ form.dropzone .note {
 .select2-container--default .select2-selection--single,
 .select2-container--default .select2-selection--multiple {
     border: 1px solid #d5d8de;
-    border-radius: 2px;
+    border-radius: 30px;
 }
 .select2-container--default .select2-selection--single {
     height: 48px;
@@ -20496,5 +20496,9 @@ fieldset[disabled] .full-calendar .fc-button.active {
 }
 .no-l-margin{
     margin-left: 0;
+}
+.search-input{
+    border-radius: 30px !important;
+    height: 32px;
 }
 /*Additional over-rides*/
