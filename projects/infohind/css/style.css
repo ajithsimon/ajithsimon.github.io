@@ -66,6 +66,9 @@ a:hover,a:focus,a:active{
 .main-header .nav > li > a{
     padding: 15px 10px;
 }
+.main-header .dropdown-menu > li > a{
+    padding: 6px 20px;
+}
 header.carousel {
     height: 60%;
 }
