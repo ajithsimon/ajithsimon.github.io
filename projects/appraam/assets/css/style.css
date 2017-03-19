@@ -16616,6 +16616,7 @@ fieldset[disabled] .btn-color.btn-evernote.active {
     background-color: #ffffff;
     border: none;
     border-bottom: 2px solid #4285f4;
+    color: #4285f4;
 }
 .tab-content {
     background: #ffffff;
