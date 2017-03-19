@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Modern Business (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 
 /* Global Styles */
 
@@ -39,14 +34,34 @@ a:hover,a:focus,a:active{
 .img-hover:hover {
     opacity: 0.8;
 }
-
+.f-white{
+    color: white;
+}
 /* Home Page */
-
+.navbar-default{
+    margin-bottom: 0;
+    background: #3B5998;
+}
+.main-header .navbar-default .nav > li > a{
+    color: white;
+    letter-spacing: 0.4px;
+    font-size: 15px;
+}
 .navbar{
     border-radius: 0;
     border-bottom: 0;
 }
-
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover{
+    color: white !important;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus, 
+.navbar-default .navbar-nav > .open > a:hover{
+    background: transparent !important;
+    color: white !important;
+}
 .main-header .nav > li > a{
     padding: 15px 10px;
 }
@@ -86,7 +101,7 @@ footer p, footer ul{
 /* Responsive Styles */
 
 @media(max-width:991px) {
-    
+
 }
 
 @media(max-width:767px) {

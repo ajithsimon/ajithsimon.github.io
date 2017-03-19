@@ -30,7 +30,7 @@
                             <li><a href="#"><span class="icon mdi mdi-power"></span></a></li>
                         </ul>
                         <div class="page-title no-pad marq-text">
-                            <marquee>
+                            <marquee onmouseover="this.stop()" onmouseout="this.start();">
                                 <span>Lorem ipsum dolar sit amet  . Lorem ipsum dolar sit amet</span><span><i class="icon mdi mdi-alert-octagon"></i></span><span>Lorem ipsum dolar sit amet Lorem ipsum dolar sit amet</span>
                             </marquee>
                         </div>
@@ -63,17 +63,17 @@
                 </div>
             </div>
             <div class="be-content">
-                <div class="page-head">
-                    <ol class="breadcrumb page-head-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Story Board</a></li>
-                    </ol>
-                </div>
                 <div class="main-content container-fluid">
                     <div class="panel panel-default">
-                        <div class="panel-heading">Overview</div>
-                        <div class="panel-body">
-
+                        <div class="tab-container">
+                            <ul class="nav nav-tabs nav-tabs-primary">
+                                <li class="active"><a href="#sb-overview" data-toggle="tab" aria-expanded="false"><span class="icon mdi mdi-settings"></span>Overview</a></li>
+                            </ul>
+                            <div class="tab-content panel-body-contrast">
+                                <div id="sb-overview" class="tab-pane active">
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,10 +84,10 @@
         <script src="assets/js/main.js" type="text/javascript"></script>
         <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
         <script type="text/javascript">
-            $(document).ready(function () {
-                //initialize the javascript
-                App.init();
-            });
+                                $(document).ready(function () {
+                                    //initialize the javascript
+                                    App.init();
+                                });
         </script>
     </body>
 </html>

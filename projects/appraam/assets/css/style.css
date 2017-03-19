@@ -1425,7 +1425,7 @@ a.text-primary:focus {
     color: #1266f1;
 }
 .text-success {
-    color: #37b358;
+    color: #37b358 !important;
 }
 a.text-success:hover,
 a.text-success:focus {
@@ -1439,14 +1439,14 @@ a.text-info:focus {
     color: #245269;
 }
 .text-warning {
-    color: #f6c163;
+    color: #f6c163 !important;
 }
 a.text-warning:hover,
 a.text-warning:focus {
     color: #f3ae33;
 }
 .text-danger {
-    color: #ea4335;
+    color: #ea4335 !important;
 }
 a.text-danger:hover,
 a.text-danger:focus {
@@ -16669,6 +16669,12 @@ fieldset[disabled] .btn-color.btn-evernote.active {
 .modal-header {
     border: 0;
     padding: 19px;
+    background: #03A9F4;
+    color: white;
+}
+.modal-header .close, .modal-header a{
+    color: white;
+    opacity: 1 !important;
 }
 .modal-header h1,
 .modal-header h2,
@@ -17248,11 +17254,11 @@ fieldset[disabled] .btn-color.btn-evernote.active {
 }
 .panel-table tr th:first-child,
 .panel-table tr td:first-child {
-    padding-left: 20px;
+    padding-left: 7pxpx;
 }
 .panel-table tr th:last-child,
 .panel-table tr td:last-child {
-    padding-right: 20px;
+    padding-right: 7oxpx;
 }
 .panel-table thead tr th {
     padding-top: 7px;
@@ -17547,7 +17553,7 @@ address {
     transition: none;
 }
 .form-control:focus {
-    box-shadow: none;
+    
 }
 .form-control[multiple] {
     padding: 0;
@@ -20481,6 +20487,8 @@ fieldset[disabled] .full-calendar .fc-button.active {
 .modal-body .panel-heading{
     margin: 0 0 10px;
     padding: 10px 10px 10px 0;
+    color: #34a853;
+    font-weight: 400;
 }
 .be-offcanvas-btn{
     color: white;

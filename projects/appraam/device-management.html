@@ -31,7 +31,7 @@
                             <li><a href="#"><span class="icon mdi mdi-power"></span></a></li>
                         </ul>
                         <div class="page-title no-pad marq-text">
-                            <marquee>
+                            <marquee onmouseover="this.stop()" onmouseout="this.start();">
                                 <span>Lorem ipsum dolar sit amet  . Lorem ipsum dolar sit amet</span><span><i class="icon mdi mdi-alert-octagon"></i></span><span>Lorem ipsum dolar sit amet Lorem ipsum dolar sit amet</span>
                             </marquee>
                         </div>
@@ -92,6 +92,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-2 pull-right text-right">
+                                                <button class="btn btn-space btn-social btn-color btn-success"><i class="icon icon-left mdi mdi-check-all"></i></button>
+                                                <button class="btn btn-space btn-social btn-color btn-success"><i class="icon icon-left mdi mdi-copy"></i></button>
                                                 <button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-bp1"><i class="icon icon-left mdi mdi-plus"></i></button>
                                             </div>
                                         </div>
@@ -126,7 +128,7 @@
                                                 <td>Protocol</td>
                                                 <td>12:50</td>
                                                 <td>None</td>
-                                                <td>None</td>
+                                                <td class="text-success">Active</td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-refresh"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
@@ -142,7 +144,7 @@
                                                 <td>Protocol</td>
                                                 <td>12:50</td>
                                                 <td>None</td>
-                                                <td>None</td>
+                                                <td class="text-warning">Slow</td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-refresh"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
@@ -158,7 +160,7 @@
                                                 <td>Protocol</td>
                                                 <td>12:50</td>
                                                 <td>None</td>
-                                                <td>None</td>
+                                                <td class="text-danger">Inactive</td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-edit"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-refresh"></i></button></td>
                                                 <td class="actions"><button type="button" class="btn btn-space btn-default btn-social"><i class="icon mdi mdi-redo"></i></button></td>
@@ -374,12 +376,6 @@
                                                     <input type="text" placeholder="" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="col-xs-4">
-                                                <div class="form-group">
-                                                    <label>ODB Sync Interval</label>
-                                                    <input type="text" placeholder="" class="form-control">
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
 
@@ -391,6 +387,12 @@
                                             <div class="col-xs-4">
                                                 <div class="form-group">
                                                     <label>ODB Protocol</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group">
+                                                    <label>ODB Sync Interval</label>
                                                     <input type="text" placeholder="" class="form-control">
                                                 </div>
                                             </div>
