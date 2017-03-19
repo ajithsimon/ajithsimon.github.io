@@ -18,8 +18,9 @@ body {
 body {
     font-family: 'Raleway', sans-serif;
     color: #4d4d4d;
+    background: #F5F5F5;
     letter-spacing: 0.3px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
     padding-top: 50px; 
@@ -97,6 +98,78 @@ footer a:hover, footer a:focus{
 }
 footer p, footer ul{
     margin: 0;
+}
+/*login popup*/
+#login-popup .modal-dialog{
+    width: 370px;
+}
+#login-popup .modal-header{
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    text-align: center;
+}
+#login-popup .close{
+    color: white;
+    font-weight: 200;
+    line-height: 26px;
+    font-size: 30px;
+    opacity: 1;
+}
+.social-login li{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 0;
+}
+.social-login li a:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: 0.4s ease all;
+}
+.social-login li a{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: white;
+    display: block;
+    font-size: 18px;
+}
+#login-popup hr{
+    position: relative;
+}
+#login-popup hr:after{
+    position: absolute;
+    content: "or";
+    left: calc(50% - 25px);
+    width: 50px;
+    top: -14px;
+    background: white;
+    text-align: center;
+}
+#login-popup form{
+    padding: 15px 0;
+}
+#login-popup form .form-control,#login-popup form .btn{
+    height: 45px;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 12px;
+}
+#login-popup .modal-footer{
+    text-align: center;
+}
+/*Error message alignment*/
+.form-group, .input-group{
+    position: relative;
+}
+.error{
+    font-weight: 400;
+    font-size: 12px;
+    color: red;
+    text-transform: capitalize;
+    position: absolute;
+    right: 5px;
 }
 /* Responsive Styles */
 
