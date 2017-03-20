@@ -17,7 +17,7 @@ body {
 body {
     font-family: 'Raleway', sans-serif;
     color: #4d4d4d;
-    background: #F5F5F5;
+    background: #EFEFEF;
     letter-spacing: 0.3px;
     font-size: 16px;
     font-weight: 400;
@@ -37,6 +37,50 @@ a:hover,a:focus,a:active{
 .f-white{
     color: white;
 }
+.f-14{
+    font-size: 12px;
+}
+.breadcrumb{
+    background: #fcfcfc;
+}
+.breadcrumb a{
+    color: #a7a7a7;
+}
+.breadcrumb a:hover,.breadcrumb a:focus{
+    color: #333;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+}
+.form-control{
+    box-shadow: none;
+    border-radius: 2px;
+}
+.form-control:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.ih-table{
+    display: table;
+    width: 100%;
+}
+.table-cell{
+    display: table-cell;
+}
+/*Error message alignment*/
+.form-group, .input-group{
+    position: relative;
+}
+.error{
+    font-weight: 400;
+    font-size: 12px;
+    color: red;
+    text-transform: capitalize;
+    position: absolute;
+    right: 5px;
+}
+
 /* Home Page */
 .navbar-default{
     margin-bottom: 0;
@@ -69,7 +113,7 @@ a:hover,a:focus,a:active{
     padding: 6px 20px;
 }
 header.carousel {
-    height: 500px;
+    height: 400px;
 }
 
 header.carousel .item,
@@ -161,20 +205,63 @@ footer p, footer ul{
 #login-popup .modal-footer{
     text-align: center;
 }
-/*Error message alignment*/
-.form-group, .input-group{
-    position: relative;
-}
-.error{
-    font-weight: 400;
-    font-size: 12px;
-    color: red;
-    text-transform: capitalize;
-    position: absolute;
-    right: 5px;
-}
-/* Responsive Styles */
 
+/*lising page*/
+.listing-search-form{
+    padding: 45px 0;
+    margin: 15px 0 20px;
+    background: white;
+}
+.listing-search-form .form-group{
+    margin-bottom: 0;
+}
+.listing-search-form input{
+    height: 45px;
+    padding: 12px;
+}
+.listing-search-form .btn{
+    height: 45px;
+    padding: 12px;
+    width: 100%;
+}
+.listing-search-results{
+    background: white;
+    padding: 30px 35px;
+    margin: 15px 0;
+    line-height: 2.2;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.listing-search-results:hover{
+    box-shadow: 0 15px 40px 0 rgba(0,0,0,0.19); transform: translate3d(0, -1px, 0);
+}
+.listing-search-results .ih-table .table-cell:first-child{
+    width: 30px;
+}
+.listing-search-results hr {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.listing-pagination{
+    background: white;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+.listing-pagination .pagination{ 
+    margin: 7px 15px 0;
+}
+.listing-pagination .pagination > li:first-child > a, .pagination > li:first-child > span,
+.listing-pagination .pagination > li > a, .pagination > li > span,
+.listing-pagination .pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius: 30px;
+    height: 35px;
+    width: 35px;
+    line-height: 1.2;
+    text-align: center;
+    margin-right: 7px;
+}
+/*listing page done*/
 @media(max-width:991px) {
 
 }
@@ -186,4 +273,16 @@ footer p, footer ul{
     #login-popup .modal-dialog{
         width: 94%;
     }
+    /*listing page*/
+    .listing-search-form {
+        padding: 20px 5px;
+        margin: 5px 0 10px;
+    }
+    .listing-search-form input{
+        margin-bottom: 7px;
+    }
+    .listing-search-results{
+        padding: 15px;
+    }
+    /*/listing page*/
 }
