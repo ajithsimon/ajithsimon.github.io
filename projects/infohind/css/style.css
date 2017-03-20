@@ -3,7 +3,6 @@
 
 html,
 body {
-    height: 100%;
 }
 *{
     text-rendering: optimizeLegibility;
@@ -70,7 +69,7 @@ a:hover,a:focus,a:active{
     padding: 6px 20px;
 }
 header.carousel {
-    height: 60%;
+    height: 500px;
 }
 
 header.carousel .item,
