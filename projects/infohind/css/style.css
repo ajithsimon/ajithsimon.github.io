@@ -68,6 +68,18 @@ a:hover,a:focus,a:active{
 .table-cell{
     display: table-cell;
 }
+#top-shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    display: none;
+}
 /*Error message alignment*/
 .form-group, .input-group{
     position: relative;
