@@ -271,7 +271,7 @@ footer p, footer ul{
 .listing-pagination{
     background: white;
     padding: 5px 0;
-    margin-bottom: 20px;
+    margin: 5px 0;
 }
 .listing-pagination .pagination{ 
     margin: 7px 15px 0;
