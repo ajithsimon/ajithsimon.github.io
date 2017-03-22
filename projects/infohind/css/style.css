@@ -208,8 +208,8 @@ footer p, footer ul{
 
 /*lising page*/
 .listing-search-form{
-    padding: 45px 0;
-    margin: 15px 0 20px;
+    padding: 25px 0;
+    margin: 0px 0 10px;
     background: white;
 }
 .listing-search-form .form-group{
@@ -224,20 +224,33 @@ footer p, footer ul{
     padding: 12px;
     width: 100%;
 }
+.listing-results-row{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.listing-results-row [class*="col-sm-"]{
+    padding-left: 0;
+    padding-right: 0;
+}
 .listing-search-results{
     background: white;
-    padding: 30px 35px;
-    margin: 15px 0;
+    padding: 20px;
+    margin: 10px;
     line-height: 2.2;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    min-height: 330px;
 }
 .listing-search-results:hover{
     box-shadow: 0 15px 40px 0 rgba(0,0,0,0.19); transform: translate3d(0, -1px, 0);
 }
 .listing-search-results .ih-table .table-cell:first-child{
     width: 30px;
+}
+.listing-search-results .media-heading{
+    color: #3B5998;
+    font-weight: 600;
 }
 .listing-search-results hr {
     margin-top: 15px;
