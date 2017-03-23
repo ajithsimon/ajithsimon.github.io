@@ -20510,4 +20510,7 @@ fieldset[disabled] .full-calendar .fc-button.active {
     border-radius: 30px !important;
     height: 32px;
 }
+.modal-footer .btn-primary, .modal-footer .btn-primary:hover{
+    background: #03A9F4;
+}
 /*Additional over-rides*/
