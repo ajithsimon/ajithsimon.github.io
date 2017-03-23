@@ -248,11 +248,11 @@ footer p, footer ul{
     background: white;
     padding: 20px;
     margin: 10px;
-    line-height: 2.2;
+    line-height: 1.8;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    min-height: 330px;
+    min-height: 350px;
 }
 .listing-search-results:hover{
     box-shadow: 0 15px 40px 0 rgba(0,0,0,0.19); transform: translate3d(0, -1px, 0);
