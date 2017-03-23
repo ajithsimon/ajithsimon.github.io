@@ -165,6 +165,26 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="pagination-text">Showing Showing 1 to 10 of 57 entries</p>
+                                        </div>
+                                        <div class="col-sm-6 text-right">
+                                            <nav>
+                                                <ul class="pagination">
+                                                    <li><a href="#" aria-label="Previous"><span aria-hidden="true" class="mdi mdi-chevron-left"></span></a></li>
+                                                    <li class="active"><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">6</a></li>
+                                                    <li><a href="#">7</a></li>
+                                                    <li><a href="#" aria-label="Next"><span aria-hidden="true" class="mdi mdi-chevron-right"></span></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div id="driver-beacons" class="tab-pane cont">
                                     <div class="row">
@@ -204,6 +224,26 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="pagination-text">Showing Showing 1 to 10 of 57 entries</p>
+                                        </div>
+                                        <div class="col-sm-6 text-right">
+                                            <nav>
+                                                <ul class="pagination">
+                                                    <li><a href="#" aria-label="Previous"><span aria-hidden="true" class="mdi mdi-chevron-left"></span></a></li>
+                                                    <li class="active"><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">6</a></li>
+                                                    <li><a href="#">7</a></li>
+                                                    <li><a href="#" aria-label="Next"><span aria-hidden="true" class="mdi mdi-chevron-right"></span></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -220,14 +260,15 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-sm-3">
-                                            <p class="panel-heading panel-heading-divider">Profile Details</p>
+                                            <p class="panel-heading panel-heading-divider">Profile Details <span style="color: red">*</span></p>
                                             <form action="assets/lib/dropzone/upload.php" class="dropzone">
                                                 <div class="dz-message">
                                                     <div class="icon"><span class="mdi mdi-cloud-upload"></span></div>
                                                     <p>Drag and Drop files here</p>
                                                 </div>
                                             </form>
-                                            <div class="form-group">
+                                            <div class="form-group required">
+                                                <label>Status</label>
                                                 <select class="form-control">
                                                     <option>Active</option>
                                                     <option>Inactive</option>
@@ -235,91 +276,93 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-sm-9">
-                                            <p class="panel-heading panel-heading-divider">Basic Details</p>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label>Mine</label>
-                                                        <select class="form-control">
-                                                            <option value="1">Jharsuguda</option>
-                                                            <option value="2">Samaleswari</option>
-                                                        </select>
+                                        <form>
+                                            <div class="col-sm-9">
+                                                <p class="panel-heading panel-heading-divider">Basic Details</p>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group required">
+                                                            <label>Mine</label>
+                                                            <select class="form-control">
+                                                                <option value="1">Jharsuguda</option>
+                                                                <option value="2">Samaleswari</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group required">
+                                                            <label>Employee ID</label>
+                                                            <input type="text" placeholder="" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group required">
+                                                            <label>Driver ID</label>
+                                                            <input type="text" placeholder="" class="form-control">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label>Employee ID</label>
-                                                        <input type="text" placeholder="" class="form-control">
-                                                    </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <p class="panel-heading panel-heading-divider">Personal Details</p>
+                                                <div class="form-group required">
+                                                    <label>First Name</label>
+                                                    <input type="text" placeholder="" class="form-control">
                                                 </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label>Driver ID</label>
-                                                        <input type="text" placeholder="" class="form-control">
-                                                    </div>
+                                                <div class="form-group required">
+                                                    <label>Last Name</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                                <div class="form-group required">
+                                                    <label>Gender</label>
+                                                    <select class="form-control">
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group required">
+                                                    <label>DOB</label>
+                                                    <input data-min-view="2" data-date-format="dd-mm-yyyy"  type="text" placeholder="" class="form-control date-widget">
+                                                </div>
+                                                <div class="form-group required">
+                                                    <label>Mobile Number</label>
+                                                    <input type="text" placeholder="" class="form-control">
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <p class="panel-heading panel-heading-divider">Personal Details</p>
-                                            <div class="form-group">
-                                                <label>First Name</label>
-                                                <input type="text" placeholder="" class="form-control">
+                                            <div class="col-sm-3">
+                                                <p class="panel-heading panel-heading-divider">Role</p>
+                                                <div class="form-group">
+                                                    <label>Role</label>
+                                                    <select class="form-control required">
+                                                        <option>Permanent</option>
+                                                        <option>Contract</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group required">
+                                                    <label>Contract Agency</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                                <div class="form-group required">
+                                                    <label>Contract Exp. Date</label>
+                                                    <input data-min-view="2" data-date-format="dd-mm-yyyy"  type="text" placeholder="" class="form-control date-widget">
+                                                </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label>Last Name</label>
-                                                <input type="text" placeholder="" class="form-control">
+                                            <div class="col-sm-3">
+                                                <p class="panel-heading panel-heading-divider">License Details</p>
+                                                <div class="form-group required">
+                                                    <label>License No</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                                <div class="form-group required">
+                                                    <label>License Exp. Date</label>
+                                                    <input data-min-view="2" data-date-format="dd-mm-yyyy" type="text" placeholder="" class="form-control date-widget">
+                                                </div>
+                                                <div class="form-group required">
+                                                    <label>License Issued Place</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label>Gender</label>
-                                                <select class="form-control">
-                                                    <option>Male</option>
-                                                    <option>Female</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>DOB</label>
-                                                <input data-min-view="2" data-date-format="dd-mm-yyyy"  type="text" placeholder="" class="form-control date-widget">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Mobile Number</label>
-                                                <input type="text" placeholder="" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <p class="panel-heading panel-heading-divider">Role</p>
-                                            <div class="form-group">
-                                                <label>Type</label>
-                                                <select class="form-control">
-                                                    <option>Permanent</option>
-                                                    <option>Contract</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Contract Agency</label>
-                                                <input type="text" placeholder="" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Contract Exp. Date</label>
-                                                <input data-min-view="2" data-date-format="dd-mm-yyyy"  type="text" placeholder="" class="form-control date-widget">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <p class="panel-heading panel-heading-divider">License Details</p>
-                                            <div class="form-group">
-                                                <label>License No</label>
-                                                <input type="text" placeholder="" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>License Exp. Date</label>
-                                                <input data-min-view="2" data-date-format="dd-mm-yyyy" type="text" placeholder="" class="form-control date-widget">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>License Issued Place</label>
-                                                <input type="text" placeholder="" class="form-control">
-                                            </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="modal-footer">

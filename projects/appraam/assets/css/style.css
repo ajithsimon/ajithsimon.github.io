@@ -17496,8 +17496,11 @@ address {
 */
 .pagination {
     padding-left: 0;
-    margin: 18px 0;
+    margin: 15px 0 0;
     border-radius: 2px;
+}
+.pagination-text{
+    margin: 15px 0;
 }
 .pagination > li > a,
 .pagination > li > span {
@@ -20512,5 +20515,10 @@ fieldset[disabled] .full-calendar .fc-button.active {
 }
 .modal-footer .btn-primary, .modal-footer .btn-primary:hover{
     background: #03A9F4;
+}
+.form-group.required label:after {
+  content:"*";
+  color:red;
+  margin-left: 3px;
 }
 /*Additional over-rides*/
