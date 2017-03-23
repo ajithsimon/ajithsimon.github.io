@@ -157,6 +157,28 @@ footer a:hover, footer a:focus{
 footer p, footer ul{
     margin: 0;
 }
+/* Vertical Center Content */
+.vertical-center-wrapper {
+    height: 100%;
+}
+.vertical-center-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-top-content {
+    display: table-cell;
+    vertical-align: top;
+}
+.vertical-center-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.vertical-bottom-content {
+    display: table-cell;
+    vertical-align: bottom;
+}
+/* -- */
 /*login popup*/
 #login-popup .modal-dialog{
     width: 370px;
