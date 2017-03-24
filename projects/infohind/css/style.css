@@ -309,17 +309,73 @@ footer p, footer ul{
     margin-right: 7px;
 }
 /*listing page done*/
+
+/*detailpage*/
+.detail-page-wrapper .breadcrumb{
+    margin-bottom: 15px;
+}
+.detail-page-wrapper h4{
+    color: #3B5998;
+}
+.detail-header{
+    background: white;
+    border-top: 1px solid #f9f9f9;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+.detail-header .table-cell:first-child{
+    width: 25px;
+}
+.detail-dp{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+.detail-header h3{
+    margin-top: 6px;
+    color: #3B5998;
+    font-weight: 600;
+}
+.detail-about{
+    background: white;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-right: 15px solid #EFEFEF;
+}
+.detail-sidebar{
+    background: white;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*/detailpage*/
+
 @media(max-width:991px) {
 
 }
 
 @media(max-width:767px) {
+    body{
+        font-size: 14px;
+        line-height: 1.432;
+    }
+    /*home page*/
     header.carousel .carousel {
         height: 70%;
     }
     #login-popup .modal-dialog{
         width: 94%;
     }
+    /*/homepage*/
+    
+    /*detail page*/
+    .detail-about{
+        border-right: 0;
+    }
+    /*/detail page*/
+    
     /*listing page*/
     .listing-search-form {
         padding: 20px 5px;
