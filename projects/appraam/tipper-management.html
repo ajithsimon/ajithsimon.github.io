@@ -190,6 +190,9 @@
                                                     <input placeholder="Search.." class="form-control search-input" type="text">
                                                 </div>
                                             </div>
+                                            <div class="col-sm-2 pull-right text-right">
+                                                <button class="btn btn-space btn-social btn-color btn-success" data-toggle="modal" data-target="#form-vsm"><i class="icon icon-left mdi mdi-plus"></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                     <table class="table table-condensed table-striped table-bordered table-inverted">
@@ -251,11 +254,141 @@
                                 <p class="modal-title">Add Vehicle</p>
                             </div>
                             <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="row">
-                                            <div class="col-sm-12"><p class="panel-heading panel-heading-divider">Basic Details</p></div>
-                                            <div class="col-sm-4">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-12"><p class="panel-heading panel-heading-divider">Basic Details</p></div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group required">
+                                                        <label>Mine</label>
+                                                        <select class="form-control">
+                                                            <option value="1">Jharsuguda</option>
+                                                            <option value="2">Samaleswari</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group required">
+                                                        <label>Serf ID</label>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group required">
+                                                        <label>Status</label>
+                                                        <select class="form-control">
+                                                            <option>Active</option>
+                                                            <option>Inactive</option>
+                                                            <option>Idle</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-12"><p class="panel-heading panel-heading-divider">Role</p></div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group required">
+                                                        <label>Type</label>
+                                                        <select class="form-control">
+                                                            <option>Permanant</option>
+                                                            <option>Contract</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group required">
+                                                        <label>Contract Agency</label>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group required">
+                                                        <label>Contract Exp. Date</label>
+                                                        <input data-min-view="2" data-date-format="dd-mm-yyyy"  type="text" placeholder="" class="form-control date-widget">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12"><p class="panel-heading panel-heading-divider">Vehicle Details</p></div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group required">
+                                                <label>Vehicle Number</label>
+                                                <input type="text" placeholder="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group required">
+                                                <label>Model</label>
+                                                <input type="text" placeholder="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group required">
+                                                <label>Make</label>
+                                                <input type="text" placeholder="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group required">
+                                                <label>Registration Year</label>
+                                                <input type="text" placeholder="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group required">
+                                                <label>Insurance Exp. Date</label>
+                                                <input data-min-view="2" data-date-format="dd-mm-yyyy"  type="text" placeholder="" class="form-control date-widget">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-12"><p class="panel-heading panel-heading-divider">Insurance Details</p></div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group required">
+                                                        <label>Insurance Provider</label>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group required">
+                                                        <label>Insurance Exp. Date</label>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Form Modals-->
+                <div id="form-vsm" tabindex="-1" role="dialog" class="modal fade">
+                        <div class="modal-dialog custom-width">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close"><span class="mdi mdi-close"></span></button>
+                                    <a href="#" class="close md-help"><span class="mdi mdi-help"></span></a>
+                                    <p class="modal-title">Vehicle - Serf Mapping</p>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <form>
+                                            <div class="col-sm-12">
+                                                <p class="panel-heading panel-heading-divider">Basic Details</p>
+                                            </div>
+                                            <div class="col-sm-6">
                                                 <div class="form-group required">
                                                     <label>Mine</label>
                                                     <select class="form-control">
@@ -264,101 +397,34 @@
                                                     </select>
                                                 </div>
                                             </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group required">
+                                                    <label>Serfs ID</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <p class="panel-heading panel-heading-divider">Vehicle Details</p>
+                                            </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group required">
-                                                    <label>Serf ID</label>
+                                                    <label>Vehicle Number</label>
                                                     <input type="text" placeholder="" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group required">
-                                                    <label>Status</label>
-                                                    <select class="form-control">
-                                                        <option>Active</option>
-                                                        <option>Inactive</option>
-                                                        <option>Idle</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="row">
-                                            <div class="col-sm-12"><p class="panel-heading panel-heading-divider">Role</p></div>
-                                            <div class="col-sm-4">
-                                                <div class="form-group required">
-                                                    <label>Type</label>
-                                                    <select class="form-control">
-                                                        <option>Permanant</option>
-                                                        <option>Contract</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="form-group required">
-                                                    <label>Contract Agency</label>
+                                                    <label>Vehicle Type</label>
                                                     <input type="text" placeholder="" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group required">
-                                                    <label>Contract Exp. Date</label>
-                                                    <input data-min-view="2" data-date-format="dd-mm-yyyy"  type="text" placeholder="" class="form-control date-widget">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12"><p class="panel-heading panel-heading-divider">Vehicle Details</p></div>
-                                    <div class="col-sm-2">
-                                        <div class="form-group required">
-                                            <label>Vehicle Number</label>
-                                            <input type="text" placeholder="" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="form-group required">
-                                            <label>Model</label>
-                                            <input type="text" placeholder="" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="form-group required">
-                                            <label>Make</label>
-                                            <input type="text" placeholder="" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="form-group required">
-                                            <label>Registration Year</label>
-                                            <input type="text" placeholder="" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="form-group required">
-                                            <label>Insurance Exp. Date</label>
-                                            <input data-min-view="2" data-date-format="dd-mm-yyyy"  type="text" placeholder="" class="form-control date-widget">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="row">
-                                            <div class="col-sm-12"><p class="panel-heading panel-heading-divider">Insurance Details</p></div>
-                                            <div class="col-sm-4">
-                                                <div class="form-group required">
-                                                    <label>Insurance Provider</label>
+                                                    <label>Vehicle Make</label>
                                                     <input type="text" placeholder="" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-4">
-                                                <div class="form-group required">
-                                                    <label>Insurance Exp. Date</label>
-                                                    <input type="text" placeholder="" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
