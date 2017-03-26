@@ -12,8 +12,11 @@ var App = (function () {
                 leftIcon: 'mdi mdi-chevron-left'
             }
         });
-$(".date-widget").datetimepicker();
+        $(".date-widget").datetimepicker();
         //Select2
+        $(".select2").select2({
+            width: '100%'
+        });
         $(".mines-select").select2({
             width: '100%'
         });

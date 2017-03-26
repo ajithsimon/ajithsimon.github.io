@@ -18705,21 +18705,20 @@ form.dropzone .note {
 .select2-container--default .select2-selection--single,
 .select2-container--default .select2-selection--multiple {
     border: 1px solid #d5d8de;
-    border-radius: 30px;
-}
-.select2-container--default .select2-selection--single {
-    height: 48px;
+    border-radius: 2px;
+    height: 30px;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-    padding: 0 15px;
-    height: 46px;
-    line-height: 46px;
-    font-size: 14px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 26px;
+    font-size: 13px;
     color: #404040;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 46px;
+    height: 30px;
     width: 30px;
+    text-align: center;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
     border: 0;
@@ -18734,7 +18733,7 @@ form.dropzone .note {
     font-family: 'Material Icons';
     font-size: 25px;
     font-weight: normal;
-    line-height: 46px;
+    line-height: 32px;
     color: #404040;
 }
 .select2-container--default .select2-selection--multiple {
@@ -20469,6 +20468,7 @@ fieldset[disabled] .full-calendar .fc-button.active {
 .mine-select .select2-container--default .select2-selection--single .select2-selection__arrow{
     height: 30px;
     line-height: 30px;
+    border-radius: 30px;
 }
 .marq-text{
     width: 70%;
