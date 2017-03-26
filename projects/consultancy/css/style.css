@@ -82,15 +82,33 @@ HEADER
 ************************************
 ***********************************/
 .header{
-    background: url('../img/bg-banner02.jpg') no-repeat fixed;
+    background: url('../img/home.jpg') no-repeat fixed;
     background-size: cover;
-    min-height: 650px;
+    min-height: 550px;
+    position: relative;
+}
+.about{
+    background: url('../img/home.jpg') no-repeat fixed;
+    background-size: cover;
+    min-height: 550px;
+    position: relative;
+}
+.contact{
+    background: url('../img/contact.jpg') no-repeat fixed;
+    background-size: cover;
+    min-height: 550px;
+    position: relative;
+}
+.job-opening{
+    background: url('../img/job-opening.jpg') no-repeat fixed;
+    background-size: cover;
+    min-height: 550px;
     position: relative;
 }
 .bg-color
 {
     background-color: rgba(0, 0, 0, 0.5);
-    min-height: 650px;
+    min-height: 550px;
 }
 #main-header
 {
