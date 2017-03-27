@@ -17104,6 +17104,7 @@ fieldset[disabled] .btn-color.btn-evernote.active {
 .table > thead > tr > th {
     border-bottom-width: 2px;
     font-weight: 700;
+    font-size: 13px;
 }
 .table > thead.primary > tr > th {
     color: #4285f4;
