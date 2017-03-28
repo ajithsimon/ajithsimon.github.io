@@ -30,3 +30,50 @@ $(document).ready(function(){
   }
  });
 });
+
+$(function() {
+    function ratingEnable() {
+        var currentRating = $('#detail-fontawesome-o').data('current-rating');
+
+        $('.stars-detail-fontawesome-o .current-rating')
+            .find('span')
+            .html(currentRating);
+
+        $('.stars-detail-fontawesome-o .clear-rating').on('click', function(event) {
+            event.preventDefault();
+
+            $('#detail-fontawesome-o')
+                .barrating('clear');
+        });
+
+        $('#detail-fontawesome-o').barrating({
+            theme: 'fontawesome-stars-o',
+            showSelectedRating: false,
+            initialRating: currentRating,
+            onSelect: function(value, text) {
+                if (!value) {
+                    $('#detail-fontawesome-o')
+                        .barrating('clear');
+                } else {
+                    $('.stars-detail-fontawesome-o .current-rating')
+                        .addClass('hidden');
+
+                    $('.stars-detail-fontawesome-o .your-rating')
+                        .removeClass('hidden')
+                        .find('span')
+                        .html(value);
+                }
+            },
+            onClear: function(value, text) {
+                $('.stars-detail-fontawesome-o')
+                    .find('.current-rating')
+                    .removeClass('hidden')
+                    .end()
+                    .find('.your-rating')
+                    .addClass('hidden');
+            }
+        });
+    }
+
+    ratingEnable();
+});

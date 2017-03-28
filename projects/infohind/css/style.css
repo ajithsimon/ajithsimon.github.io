@@ -118,11 +118,16 @@ a:hover,a:focus,a:active{
     background: transparent !important;
     color: white !important;
 }
+.nav-icon i{
+    width: 15px;
+    text-align: center;
+    margin-right: 5px;
+}
 .main-header .nav > li > a{
     padding: 15px 10px;
 }
 .main-header .dropdown-menu > li > a{
-    padding: 6px 20px;
+    padding: 6px 10px;
 }
 header.carousel {
     height: 400px;
@@ -349,7 +354,12 @@ footer p, footer ul{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
+.br-wrapper.br-theme-fontawesome-stars-o{
+    display: inline-block;
+}
+.title.current-rating{
+    font-size: 14px;
+}
 /*/detailpage*/
 
 @media(max-width:991px) {
