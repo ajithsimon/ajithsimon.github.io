@@ -88,7 +88,7 @@ HEADER
     position: relative;
 }
 .about{
-    background: url('../img/home.jpg') no-repeat fixed;
+    background: url('../img/about.jpg') no-repeat fixed;
     background-size: cover;
     min-height: 550px;
     position: relative;
@@ -503,7 +503,7 @@ TESTIMONIAL
     top: 62%;
 }
 .testimonial-item ul li blockquote::after {
-    content: '‚Äù';
+    content: '‚Ä?';
     right: 30px;
 }
 /***********************************
@@ -731,6 +731,11 @@ Responsive media queries
     .navbar-default .navbar-brand {
         padding-left: 16px;
         margin-top: 0px;
+        font-size: 12px;
+    }
+    .bg-color,.header,.about, .contact, .job-opening{
+        height: 480px;
+        min-height: 480px;
     }
     .banner-info {
         padding-top: 40px;
