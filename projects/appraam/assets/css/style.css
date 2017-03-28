@@ -4919,6 +4919,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .navbar-header {
         float: left;
         text-align: center;
+        position: relative;
     }
     .navbar-header p{
         font-size: 10px;
@@ -16602,7 +16603,7 @@ fieldset[disabled] .btn-color.btn-evernote.active {
     line-height: 0;
 }
 .nav-tabs > li a .icon img{
-    width: 17px;
+    width: 15px;
 }
 .nav-tabs > li a:hover {
     background: transparent;
@@ -20504,7 +20505,7 @@ fieldset[disabled] .full-calendar .fc-button.active {
     color: white;
     font-size: 30px;
     position: absolute;
-    left: 15px;
+    right: 5px;
     padding: 10px 0;
 }
 .be-offcanvas-btn:hover,.be-offcanvas-btn:focus{
