@@ -266,7 +266,7 @@
                 <div class="container">
                     <div class="row detail-header">
                         <div class="col-sm-3 col-xs-12">
-                            <img src="http://placehold.it/350x150" class="detail-dp" alt="center image">
+                            <a href="#" data-toggle="modal" data-target=".center-detail-modal"><img src="http://placehold.it/350x150" class="detail-dp" alt="center image"></a>
                         </div>
                         <div class="col-sm-9 col-xs-12">
                             <h3>Manipal hospital old airport road bangalore</h3>
@@ -326,18 +326,13 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="stars stars-detail-fontawesome-o">
-                                            <select id="detail-fontawesome-o" name="rating" data-current-rating="5.6" autocomplete="off">
+                                            <select id="detail-fontawesome-o" name="rating" data-current-rating="3.6" autocomplete="off">
                                                 <option value=""></option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
                                             </select>
                                             <span class="title current-rating">
                                                 Current rating: <span class="value"></span>
@@ -389,6 +384,48 @@
                 </div>
             </footer>
             <!-- /.container-fluid -->
+            <!--carousel modal-->
+            <div class="modal fade center-detail-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="img-responsive" src="http://placehold.it/1200x600/555/000&text=One" alt="...">
+                                    <div class="carousel-caption">
+                                        One Image
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=Two" alt="...">
+                                    <div class="carousel-caption">
+                                        Another Image
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="http://placehold.it/1200x600/fcf00c/000&text=Three" alt="...">
+                                    <div class="carousel-caption">
+                                        Another Image
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/carousel modal-->
             <!-- Modal -->
             <div class="modal fade" id="login-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
