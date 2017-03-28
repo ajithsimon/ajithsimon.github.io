@@ -733,8 +733,8 @@ Responsive media queries
         margin-top: 0px;
         font-size: 12px;
     }
-    .bg-color,.header,.about, .contact, .job-opening{
-        height: 480px;
+    .bg-color,.header,.about, .contact, .job-openings
+{        height: 480px;
         min-height: 480px;
     }
     .banner-info {

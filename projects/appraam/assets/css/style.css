@@ -8259,7 +8259,7 @@ canvas {
     line-height: 40px;
     height: 60px;
     width: 230px;
-    background-image: url("../img/logo.svg");
+    background-image: url("../img/sical-logo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 75px;
@@ -9168,12 +9168,15 @@ canvas {
     letter-spacing: 0.2px;
 }
 .be-left-sidebar .sidebar-elements > li > a .icon {
-    line-height: 18px;
+    line-height: 0;
     font-size: 16px;
     min-width: 19px;
     margin-right: 5px;
     text-align: center;
     vertical-align: middle;
+}
+.be-left-sidebar .sidebar-elements > li > a .icon img{
+    width: 15px;
 }
 .be-left-sidebar .sidebar-elements > li > a:hover {
     background-color: #f0f0f0;
@@ -16596,7 +16599,10 @@ fieldset[disabled] .btn-color.btn-evernote.active {
     font-size: 16px;
     vertical-align: middle;
     margin-right: 6px;
-    line-height: 17px;
+    line-height: 0;
+}
+.nav-tabs > li a .icon img{
+    width: 17px;
 }
 .nav-tabs > li a:hover {
     background: transparent;
@@ -20485,7 +20491,7 @@ fieldset[disabled] .full-calendar .fc-button.active {
     padding: 10px;
     font-size: 9px;
 }
-.copyrights img{
+.copyrights a img{
     width: 90px;
 }
 .modal-body .panel-heading{
