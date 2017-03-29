@@ -38,13 +38,13 @@ $(function() {
         $('.stars-detail-fontawesome-o .current-rating')
             .find('span')
             .html(currentRating);
-
-        $('.stars-detail-fontawesome-o .clear-rating').on('click', function(event) {
-            event.preventDefault();
-
-            $('#detail-fontawesome-o')
-                .barrating('clear');
-        });
+            $('.stars-detail-fontawesome-o .clear-rating').hide();
+//        $('.stars-detail-fontawesome-o .clear-rating').on('click', function(event) {
+//            event.preventDefault();
+//
+//            $('#detail-fontawesome-o')
+//                .barrating('clear');
+//        });
 
         $('#detail-fontawesome-o').barrating({
             theme: 'fontawesome-stars-o',

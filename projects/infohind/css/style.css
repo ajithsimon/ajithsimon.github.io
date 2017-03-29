@@ -80,6 +80,15 @@ a:hover,a:focus,a:active{
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
     display: none;
 }
+.no-mar{
+    margin: 0;
+}
+.no-r-pad{
+    padding-right: 0;
+}
+.no-l-pad{
+    padding-left: 0;
+}
 /*Error message alignment*/
 .form-group, .input-group{
     position: relative;
@@ -92,7 +101,28 @@ a:hover,a:focus,a:active{
     position: absolute;
     right: 5px;
 }
-
+/* Vertical Center Content */
+.vertical-center-wrapper {
+    height: 100%;
+}
+.vertical-center-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-top-content {
+    display: table-cell;
+    vertical-align: top;
+}
+.vertical-center-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.vertical-bottom-content {
+    display: table-cell;
+    vertical-align: bottom;
+}
+/* -- */
 /* Home Page */
 .navbar-default{
     margin-bottom: 0;
@@ -360,7 +390,55 @@ footer p, footer ul{
 .title.current-rating{
     font-size: 14px;
 }
+button.close{
+    position: absolute;
+    top: -25px;
+    right: -35px;
+    font-size: 36px;
+    font-weight: 200;
+    color: white;
+    opacity: 1;
+}
+button.close:hover{
+    color: white;
+    opacity: 0.9;
+}
 /*/detailpage*/
+
+/*dashboard*/
+.db-sidebar--left{
+    background: white;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.db-sidebar--left a p,.db-sidebar--left a p:hover{
+    color: #333;
+}
+.db-main-content{
+    font-size: 14px;
+    line-height: 24px;
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.media .media-heading{
+    margin-bottom: 0;
+}
+.post-section{
+    border-bottom: 1px solid #EFEFEF;
+    margin-bottom: 15px;
+}
+.media.post-content img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    object-position: top center;
+}
+/*/dashboard*/
 
 @media(max-width:991px) {
 
@@ -379,13 +457,13 @@ footer p, footer ul{
         width: 94%;
     }
     /*/homepage*/
-    
+
     /*detail page*/
     .detail-about{
         border-right: 0;
     }
     /*/detail page*/
-    
+
     /*listing page*/
     .listing-search-form {
         padding: 20px 5px;
@@ -398,4 +476,13 @@ footer p, footer ul{
         padding: 15px;
     }
     /*/listing page*/
+    
+    /*dashboard*/
+    .db-sidebar--left{
+        height: auto;
+    }
+    .no-r-pad{
+        padding-right: 15px;
+    }
+    /*/dashboard*/
 }

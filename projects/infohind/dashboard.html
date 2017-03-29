@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Ajithkumar">
+
+        <title>Infohind - Dashboard</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <div class="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-header">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Infohind</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="menu-header">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="index.html"><span class="nav-icon"><i class="fa fa-home"></i></span>Home</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="nav-icon"><i class="fa fa-shield"></i></span>My Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="nav-icon"><i class="fa fa-user-secret"></i></span>Personal <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-user"></i></span>Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-envelope"></i></span>Message Book</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-users"></i></span>Invite Friends</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-bell"></i></span>Add Alert</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-camera"></i></span>Photo Album</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="nav-icon"><i class="fa fa-user-circle-o"></i></span>Professional <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-user-md"></i></span>Doctor</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-briefcase"></i></span>Lawyer</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-male"></i></span>Teacher</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-empire"></i></span>Engineer</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-building"></i></span>IT Professional</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="nav-icon"><i class="fa fa-paper-plane"></i></span>Services <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="listing_page.html"><span class="nav-icon"><i class="fa fa-h-square"></i></span>Hospital</a>
+                                    </li>
+                                    <li>
+                                        <a href="detail_page.html"><span class="nav-icon"><i class="fa fa-university"></i></span>School</a>
+                                    </li>
+                                    <li>
+                                        <a href="detail_page.html"><span class="nav-icon"><i class="fa fa-bookmark"></i></span>Library</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-bed"></i></span>Hotel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-cutlery"></i></span>Restaurant</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-bus"></i></span>Tours and Travels</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-thumb-tack"></i></span>Pincode</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="nav-icon"><i class="fa fa-building"></i></span>Company <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-building"></i></span>IT</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-money"></i></span>Finance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-gavel"></i></span>Construction</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-suitcase"></i></span>Insurance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-cube"></i></span>Retail</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="nav-icon"><i class="fa fa-shopping-bag"></i></span>Products <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-shopping-bag"></i></span>Products</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="nav-icon"><i class="fa fa-rss"></i></span>Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-flag"></i></span>Political</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-futbol-o"></i></span>Sports</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-share-square"></i></span>Social</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-institution"></i></span>Educational</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-heartbeat"></i></span>Health</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-film"></i></span>Movies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-suitcase"></i></span>Financial</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-keyboard-o"></i></span>Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-smile-o"></i></span>Jokes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-file-text"></i></span>Poetry</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="nav-icon"><i class="fa fa-star"></i></span>Free Ads <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-car"></i></span>Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-home"></i></span>Properties</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-headphones"></i></span>Electronic Goods</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-industry"></i></span>Business & Industrial</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-book"></i></span>Books</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-odnoklassniki"></i></span>Antiques</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-file-image-o"></i></span>Art</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-outdent"></i></span>Other</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="nav-icon"><i class="fa fa-user"></i></span>User <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-sign-in"></i></span>Login</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-user-plus"></i></span>Create User</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-unlock-alt"></i></span>Change Password</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-key"></i></span>Forgot Password</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-question"></i></span>Suggestion</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="nav-icon"><i class="fa fa-phone"></i></span>Contact Us</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#login-popup" data-toggle="modal"><span class="nav-icon"><i class="fa fa-sign-in"></i></span>Sign In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <div id="top-shadow"></div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <ol class="breadcrumb f-14">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li class="active">Dashboard</li>
+                </ol>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Sidebar-->
+                <div class="col-sm-2 col-xs-12 no-r-pad">
+                    <div class="db-sidebar--left">
+                        <p style="border-bottom: 1px solid #EFEFEF">Online</p>
+                        <div class="media">
+                            <a href="#">
+                                <div class="media-left media-middle">
+                                    <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                </div>
+                                <div class="media-body media-middle">
+                                    <p class="media-heading">Anderson</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="media">
+                            <a href="#">
+                                <div class="media-left media-middle">
+                                    <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                </div>
+                                <div class="media-body media-middle">
+                                    <p class="media-heading">Anderson</p>
+                                </div>
+                            </a>
+                        </div>
+                        <p style="border-bottom: 1px solid #EFEFEF">My Friends</p>
+                        <div class="media">
+                            <a href="#">
+                                <div class="media-left media-middle">
+                                    <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                </div>
+                                <div class="media-body media-middle">
+                                    <p class="media-heading">Anderson</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="media">
+                            <a href="#">
+                                <div class="media-left media-middle">
+                                    <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                </div>
+                                <div class="media-body media-middle">
+                                    <p class="media-heading">Anderson</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="media">
+                            <a href="#">
+                                <div class="media-left media-middle">
+                                    <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                </div>
+                                <div class="media-body media-middle">
+                                    <p class="media-heading">Anderson</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="media">
+                            <a href="#">
+                                <div class="media-left media-middle">
+                                    <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                </div>
+                                <div class="media-body media-middle">
+                                    <p class="media-heading">Anderson</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="media">
+                            <a href="#">
+                                <div class="media-left media-middle">
+                                    <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                </div>
+                                <div class="media-body media-middle">
+                                    <p class="media-heading">Anderson</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="media">
+                            <a href="#">
+                                <div class="media-left media-middle">
+                                    <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                </div>
+                                <div class="media-body media-middle">
+                                    <p class="media-heading">Anderson</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--/Sidebar-->
+
+                <!--main content-->
+                <div class="col-sm-10 col-xs-12">
+                    <div class="db-main-content">
+                        <!--update comment form-->
+                        <div class="row">
+                            <div class="col-sm-7 col-xs-12">
+                                <form>
+                                    <h4>Type Your Message Below:</h4>
+                                    <hr>
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Comment" rows="4"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success">Update Status</button>
+
+                                        <button type="button" class="btn btn-primary">Post to friends wall</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--update comment form-->
+                        <div class="row">
+                            <!--fb section-->
+                            <div class="col-sm-3 col-xs-12 no-r-pad">
+                                <h5 style="color: #3B5998">My Facebook <i class="fa fa-facebook-official"></i></h5>
+                                <hr>
+                                <div class="post-section fb-post">
+                                    <div class="media">
+                                        <a href="#">
+                                            <div class="media-left media-middle">
+                                                <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                            </div>
+                                            <div class="media-body media-middle">
+                                                <p class="media-heading">Anderson</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p>Probably he did not have confidence of his dad "beta ghar aa jao, agle saal kahi aur admission le lena".
+                                        I had seen a junior in college jumping similarly. Really, what the hell is happening. Why are we, the environment, pushing them for such reactions?</p>
+                                    <div class="media post-content">
+                                        <div class="media-left">
+                                            <a href="#" data-toggle="modal" data-target=".post-images-modal"><img class="media-object" src="img/person-1.png" alt="" height="100"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href=""><p class="media-heading">Heading</p></a>
+                                            <p>Probably he did not have confidence of his dad .</p>
+                                        </div>
+                                    </div>
+                                    <p><a href="#">Like</a> &nbsp; <a href="#">Reply</a></p>
+                                </div>
+                                <div class="post-section fb-post">
+                                    <div class="media">
+                                        <a href="#">
+                                            <div class="media-left media-middle">
+                                                <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                            </div>
+                                            <div class="media-body media-middle">
+                                                <p class="media-heading">Anderson</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p>Probably he did not have confidence of his dad "beta ghar aa jao, agle saal kahi aur admission le lena".
+                                        I had seen a junior in college jumping similarly. Really, what the hell is happening. Why are we, the environment, pushing them for such reactions?</p>
+                                    <p><a href="#">Like</a> &nbsp; <a href="#">Reply</a></p>
+                                </div>
+                                <div class="post-section fb-post">
+                                    <div class="media">
+                                        <a href="#">
+                                            <div class="media-left media-middle">
+                                                <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                            </div>
+                                            <div class="media-body media-middle">
+                                                <p class="media-heading">Anderson</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="media post-content">
+                                        <div class="media-left">
+                                            <a href="#" data-toggle="modal" data-target=".post-images-modal"><img class="media-object" src="img/person-1.png" alt="" height="100"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href=""><p class="media-heading">Heading</p></a>
+                                            <p>Probably he did not have confidence of his dad "beta ghar aa jao, agle saal kahi aur admission le lena". I had seen a junior in college jumping similarly.</p>
+                                        </div>
+                                    </div>
+                                    <p><a href="#">Like</a> &nbsp; <a href="#">Reply</a></p>
+                                </div>
+                            </div>
+                            <!--/fb section-->
+
+                            <!--twitter section-->
+                            <div class="col-sm-3 col-xs-12 no-r-pad">
+                                <h5 style="color: #55acee">My Twitter <i class="fa fa-twitter"></i></h5>
+                                <hr/>
+                                <div class="post-section twitter-post">
+                                    <div class="media post-content">
+                                        <div class="media-left media-middle">
+                                            <a href="#" data-toggle="modal" data-target=".post-images-modal"><img class="media-object img-circle" src="img/person-1.png" alt="" height="50"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <p>Probably he did not have confidence of his dad "beta ghar aa jao, agle saal kahi aur admission le lena". I had seen a junior in college jumping similarly.</p>
+                                        </div>
+                                    </div>
+                                    <p><a href="#">Reply</a> &nbsp; <a href="#">Retweet</a></p>
+                                </div>
+                                <div class="post-section twitter-post">
+                                    <div class="media post-content">
+                                        <div class="media-left media-middle">
+                                            <a href="#" data-toggle="modal" data-target=".post-images-modal"><img class="media-object img-circle" src="img/person-1.png" alt="" height="50"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <p>Probably he did not have confidence of his dad "beta ghar aa jao, agle saal kahi aur admission le lena". I had seen a junior in college jumping similarly.</p>
+                                        </div>
+                                    </div>
+                                    <p><a href="#">Reply</a> &nbsp; <a href="#">Retweet</a></p>
+                                </div>
+                                <div class="post-section twitter-post">
+                                    <div class="media post-content">
+                                        <div class="media-left media-middle">
+                                            <a href="#" data-toggle="modal" data-target=".post-images-modal"><img class="media-object img-circle" src="img/person-1.png" alt="" height="50"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <p>Probably he did not have confidence of his dad "beta ghar aa jao, agle saal kahi aur admission le lena". I had seen a junior in college jumping similarly.</p>
+                                        </div>
+                                    </div>
+                                    <p><a href="#">Reply</a> &nbsp; <a href="#">Retweet</a></p>
+                                </div>
+                            </div>
+                            <!--/twitter section-->
+
+                            <!--linkedin section-->
+                            <div class="col-sm-3 col-xs-12 no-r-pad">
+                                <h5 style="color: #0077B5">My LinkedIn <i class="fa fa-linkedin-square"></i></h5>
+                                <hr/>
+                                <div class="post-section li-post">
+                                    <div class="media">
+                                        <a href="#">
+                                            <div class="media-left media-middle">
+                                                <img class="media-object img-circle" src="img/person-1.png" alt="" height="35">
+                                            </div>
+                                            <div class="media-body media-middle">
+                                                <p class="media-heading">Anderson</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p>Probably he did not have confidence of his dad "beta ghar aa jao, agle saal kahi aur admission le lena".
+                                        I had seen a junior in college jumping similarly. Really, what the hell is happening. Why are we, the environment, pushing them for such reactions?</p>
+                                    <div class="media post-content">
+                                        <div class="media-left">
+                                            <a href="#" data-toggle="modal" data-target=".post-images-modal"><img class="media-object" src="img/person-1.png" alt="" height="100"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href=""><p class="media-heading">Heading</p></a>
+                                            <p>Probably he did not have confidence of his dad .</p>
+                                        </div>
+                                    </div>
+                                    <p><a href="#">Like</a> &nbsp; <a href="#">Reply</a></p>
+                                </div>
+                            </div>
+                            <!--/linkedin section-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/main content-->
+            <!--carousel modal-->
+            <div class="modal fade post-images-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="vertical-center-wrapper">
+                    <div class="vertical-center-table">
+                        <div class="vertical-center-content">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img class="img-responsive" src="http://placehold.it/1200x600/000&text=One" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img class="img-responsive" src="http://placehold.it/1200x600/000&text=Two" alt="...">
+                                            </div>
+                                            <div class="item">
+                                                <img class="img-responsive" src="http://placehold.it/1200x600/000&text=Three" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/carousel modal-->
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <ul class="list-inline">
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback/Suggestion</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-sm-6 col-xs-12 text-right">
+                    <p>Copyright &copy; Infohind 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.container-fluid -->
+    <!-- Modal -->
+    <div class="modal fade" id="login-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Login to your account</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="social-login text-center">
+                        <ul class="list-inline">
+                            <li><a href="#" style="background: #3b5999;"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" style="background: #dd4b39;"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" style="background: #0077B5;"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <form>
+                        <div class="form-group">
+                            <label class="hide error">error msg</label>
+                            <input class="form-control" type="text" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" placeholder="Password">
+                        </div>
+                        <div class="form-group" style="font-size:14px;">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="checkbox" style="margin: 0">
+                                        <label>
+                                            <input type="checkbox"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <a href="#">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-block btn-success">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    Looking to <a href="#">create an account?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        });
+    </script>
+
+</body>
+
+</html>
