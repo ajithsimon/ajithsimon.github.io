@@ -390,6 +390,9 @@ footer p, footer ul{
 .title.current-rating{
     font-size: 14px;
 }
+.media.comment-section{
+    margin: 10px 0
+}
 button.close{
     position: absolute;
     top: -25px;
