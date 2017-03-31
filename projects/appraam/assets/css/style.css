@@ -17108,6 +17108,9 @@ fieldset[disabled] .btn-color.btn-evernote.active {
     font-weight: 500;
     color: #333;
 }
+.table.table-inverted > thead > tr > th img{
+    width: 15px;
+}
 .table > thead > tr > th {
     border-bottom-width: 2px;
     font-weight: 700;
@@ -17118,6 +17121,9 @@ fieldset[disabled] .btn-color.btn-evernote.active {
 }
 .table > thead.success > tr > th {
     color: #34a853;
+}
+.table > tbody > tr > td img{
+    width: 15px;
 }
 .table > tbody > tr > td {
     font-weight: 400;
@@ -20531,5 +20537,10 @@ fieldset[disabled] .full-calendar .fc-button.active {
   content:"*";
   color:red;
   margin-left: 3px;
+}
+.action-icons img{
+    width: 17px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 /*Additional over-rides*/
