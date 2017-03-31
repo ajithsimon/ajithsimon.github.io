@@ -11,7 +11,7 @@ function isMobile() {
         return false;
     }
 }
-if (!isMobile()){
+if (!isMobile()) {
     $('ul.nav li.dropdown').hover(function () {
         $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
     }, function () {
@@ -20,58 +20,63 @@ if (!isMobile()){
 }
 
 //on scroll navbar shadow
-$(document).ready(function(){
- $(window).scroll(function(){
-  var y = $(window).scrollTop();
-  if( y > 0 ){
-      $("#top-shadow").css({'display':'block', 'opacity':y/20});
-  } else {
-      $("#top-shadow").css({'display':'block', 'opacity':y/20});
-  }
- });
+$(document).ready(function () {
+    $(window).scroll(function () {
+        var y = $(window).scrollTop();
+        if (y > 0) {
+            $("#top-shadow").css({'display': 'block', 'opacity': y / 20});
+        } else {
+            $("#top-shadow").css({'display': 'block', 'opacity': y / 20});
+        }
+    });
 });
 
-$(function() {
+$(function () {
     function ratingEnable() {
-        var currentRating = $('#detail-fontawesome-o').data('current-rating');
+        var currentRating = $('.detail-fontawesome-o').data('current-rating');
 
         $('.stars-detail-fontawesome-o .current-rating')
-            .find('span')
-            .html(currentRating);
-            $('.stars-detail-fontawesome-o .clear-rating').hide();
+                .find('span')
+                .html(currentRating);
+        $('.stars-detail-fontawesome-o .clear-rating').hide();
 //        $('.stars-detail-fontawesome-o .clear-rating').on('click', function(event) {
 //            event.preventDefault();
 //
-//            $('#detail-fontawesome-o')
+//            $('.detail-fontawesome-o')
 //                .barrating('clear');
 //        });
 
-        $('#detail-fontawesome-o').barrating({
+        $('.detail-fontawesome-o').barrating({
             theme: 'fontawesome-stars-o',
             showSelectedRating: false,
             initialRating: currentRating,
-            onSelect: function(value, text) {
+            onSelect: function (value, text) {
                 if (!value) {
-                    $('#detail-fontawesome-o')
-                        .barrating('clear');
+                    $('.detail-fontawesome-o')
+                            .barrating('clear');
                 } else {
                     $('.stars-detail-fontawesome-o .current-rating')
-                        .addClass('hidden');
+                            .addClass('hidden');
 
                     $('.stars-detail-fontawesome-o .your-rating')
-                        .removeClass('hidden')
-                        .find('span')
-                        .html(value);
+                            .removeClass('hidden')
+                            .find('span')
+                            .html(value);
                 }
             },
-            onClear: function(value, text) {
+            onClear: function (value, text) {
                 $('.stars-detail-fontawesome-o')
-                    .find('.current-rating')
-                    .removeClass('hidden')
-                    .end()
-                    .find('.your-rating')
-                    .addClass('hidden');
+                        .find('.current-rating')
+                        .removeClass('hidden')
+                        .end()
+                        .find('.your-rating')
+                        .addClass('hidden');
             }
+        });
+        $('.user-comment').barrating({
+            theme: 'fontawesome-stars-o',
+            readonly: true,
+            initialRating: currentRating
         });
     }
 
