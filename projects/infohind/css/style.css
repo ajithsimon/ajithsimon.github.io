@@ -431,9 +431,20 @@ button.close:hover{
 .media .media-heading{
     margin-bottom: 0;
 }
+.db-social-section{
+    margin-top: 20px;
+}
+.db-social-section h5{
+    color: white;
+    padding-top: 10px;
+}
 .post-section{
     border-bottom: 1px solid #EFEFEF;
     margin-bottom: 15px;
+    color: #e2e2e2;
+}
+.post-section a,.post-section a:hover,.post-section a:focus{
+    color: white;
 }
 .media.post-content img{
     height: 70px;
