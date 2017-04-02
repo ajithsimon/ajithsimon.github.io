@@ -190,7 +190,7 @@ a.goto-btn:hover {
 }
 .img-wrapper i.fa:hover { background: #ffcc33 }
 /* Home Section Style 3 - Slider*/
-#tf-home.slider { background: none }
+#tf-home.slider { background: none; }
 #tf-home.slider .overlay { padding: 0 }
 .carousel-caption {
     position: absolute;
@@ -236,6 +236,7 @@ a.goto-btn:hover {
 .carousel-fade .carousel-inner .item {
     opacity: 0;
     transition-property: opacity;
+    height: 500px
 }
 .carousel-fade .carousel-inner .active { opacity: 1 }
 .carousel-fade .carousel-inner .active.left,
