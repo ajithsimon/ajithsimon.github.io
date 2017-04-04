@@ -5,7 +5,8 @@ html {
     overflow-y: auto;
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
-    color: #6f6f6f;
+    color: #333;
+    font-size: 16px;
 }
 ::-webkit-scrollbar { width: 2px;  }/* for vertical scrollbars */
 ::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.1); }
@@ -24,7 +25,6 @@ h2 {
     font-weight: 300;
 }
 h5 { font-size: 16px }
-p { font-size: 14px }
 a {
     color: inherit;
     transition: all 0.5s;
@@ -101,12 +101,16 @@ a:focus {
 }
 #tf-header .breadcrumb > li a { color: #ffffff }
 /* Home Style */
+.content-section{
+    padding: 20px 0;
+}
 #tf-home{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #cfcfcf;
+    margin-top: 70px;
 }
 #tf-home.home-bg{
     background: url(../img/home.jpg);
@@ -150,7 +154,7 @@ a:focus {
     background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
-    padding: 12% 0;
+    padding: 10% 0;
     background-attachment: fixed;
 }
 #tf-home h1 { color: #ffcc33 }
@@ -999,9 +1003,12 @@ p.help-block.text-danger ul li {
 }
 /* Footer */
 #tf-footer {
-    padding: 2% 0 1% 0;
+    padding: 10px 0;
     background-color: #e5b112;
     color: #ffffff;
+}
+#tf-footer p, #tf-footer ul{
+    margin: 0;
 }
 ul.social li a i {
     font-size: 18px;
