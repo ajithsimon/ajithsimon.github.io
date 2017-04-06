@@ -17571,7 +17571,7 @@ address {
     transition: none;
 }
 .form-control:focus {
-    
+
 }
 .form-control[multiple] {
     padding: 0;
@@ -20535,13 +20535,40 @@ fieldset[disabled] .full-calendar .fc-button.active {
     background: #03A9F4;
 }
 .form-group.required label:after {
-  content:"*";
-  color:red;
-  margin-left: 3px;
+    content:"*";
+    color:red;
+    margin-left: 3px;
 }
 .action-icons img{
     width: 17px;
     margin: 0 5px;
     cursor: pointer;
+}
+.map-spots{
+    background: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.2);
+    height: 125px;
+    min-height: 100%;
+    display: table;
+    width: 100%
+}
+.map-spots p{
+    margin-bottom: 0;
+}
+.map-spots div{
+    margin-bottom: 10px;
+}
+.map-spots .count {
+    color: white;
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
 }
 /*Additional over-rides*/
