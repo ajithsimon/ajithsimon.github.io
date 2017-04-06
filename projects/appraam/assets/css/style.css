@@ -16630,6 +16630,7 @@ fieldset[disabled] .btn-color.btn-evernote.active {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 0 0 3px 3px;
+    overflow-x: scroll;
 }
 .tab-content .tab-pane h1:first-child,
 .tab-content .tab-pane h2:first-child,
