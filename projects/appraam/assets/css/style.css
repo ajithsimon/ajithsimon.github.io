@@ -20561,6 +20561,7 @@ fieldset[disabled] .full-calendar .fc-button.active {
     margin-bottom: 10px;
 }
 .map-spots .count {
+    background: #2885C2;
     color: white;
     padding: 5px;
     font-size: 24px;
