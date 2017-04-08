@@ -106,11 +106,12 @@ a:focus {
 }
 #tf-home{
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #cfcfcf;
     margin-top: 70px;
+    height: calc(100vh - 70px);
+    text-align: center;
 }
 #tf-home.home-bg{
     background: url(../img/home.jpg);
@@ -140,6 +141,7 @@ a:focus {
 }
 #tf-home.calls-bg{
     background: url(../img/calls.jpg);
+    background-position: bottom center;
 }
 #tf-home.performance-bg{
     background: url(../img/performance.jpg);
@@ -156,6 +158,7 @@ a:focus {
     background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
     padding: 10% 0;
     background-attachment: fixed;
+    height: calc(100vh - 70px);
 }
 #tf-home h1 { color: #ffcc33 }
 .content-heading p.lead { margin-bottom: 50px }
@@ -173,7 +176,6 @@ a.goto-btn:hover {
 /* Home Section Style 2 - With Video*/
 #tf-home.video .overlay {
     padding: 0;
-    padding-top: 10%;
 }
 .img-wrapper { position: relative }
 .img-wrapper img.img-responsive { margin: 0 auto !important }
@@ -240,7 +242,7 @@ a.goto-btn:hover {
 .carousel-fade .carousel-inner .item {
     opacity: 0;
     transition-property: opacity;
-    height: 500px
+    height: calc(100vh - 70px);
 }
 .carousel-fade .carousel-inner .active { opacity: 1 }
 .carousel-fade .carousel-inner .active.left,
@@ -294,12 +296,12 @@ a.goto-btn:hover {
 
 /* Home Parallax Effect */
 .bcg {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 #tf-home.parallax .bcg { background-image:url('../img/bg/slider03.jpg'); }
@@ -1157,3 +1159,27 @@ ul.meta-tags li:last-child:after { content: ' ' }
 .comment form { margin-top: -30px }
 .comment input,
 .comment textarea { margin-bottom: 15px }
+
+
+/* Vertical Center Content */
+.vertical-center-wrapper {
+    height: 100%;
+}
+.vertical-center-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-top-content {
+    display: table-cell;
+    vertical-align: top;
+}
+.vertical-center-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.vertical-bottom-content {
+    display: table-cell;
+    vertical-align: bottom;
+}
+/* -- */
