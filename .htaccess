@@ -20,7 +20,7 @@ ExpiresDefault "access 1 month"
 Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
-Redirect /appraam http://www.ajithsimon.com/works
+Redirect /projects/appraam http://www.ajithsimon.com/works
 
 RewriteEngine on
 RewriteCond %{HTTP_REFERER} !^$
