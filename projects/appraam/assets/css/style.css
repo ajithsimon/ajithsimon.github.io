@@ -20552,7 +20552,8 @@ fieldset[disabled] .full-calendar .fc-button.active {
     height: 125px;
     min-height: 100%;
     display: table;
-    width: 100%
+    width: 100%;
+    margin-bottom: 15px;
 }
 .map-spots p{
     margin-bottom: 0;
