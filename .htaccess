@@ -20,8 +20,6 @@ ExpiresDefault "access 1 month"
 Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
-Redirect /projects/appraam http://www.ajithsimon.com/works
-
 RewriteEngine on
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{HTTP_REFERER} !^http?://(www\.)?ajithsimon.com [NC]
@@ -31,6 +29,7 @@ RewriteRule (^|/)index\.(php|html)$ /%1 [NC,R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html
+Redirect /projects/appraam http://www.ajithsimon.com/works
 
 # BEGIN GZIP
 <ifmodule mod_deflate.c>
