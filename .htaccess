@@ -29,7 +29,7 @@ RewriteRule (^|/)index\.(php|html)$ /%1 [NC,R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html
-Redirect /projects/appraam http://www.ajithsimon.com/works
+Redirect http://www.ajithsimon.com/projects/appraam http://www.ajithsimon.com/works
 
 # BEGIN GZIP
 <ifmodule mod_deflate.c>
