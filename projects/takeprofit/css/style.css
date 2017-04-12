@@ -141,7 +141,7 @@ a:focus {
 }
 #tf-home.calls-bg{
     background: url(../img/calls.jpg);
-    background-position: center center;
+    background-position: top center;
 }
 #tf-home.performance-bg{
     background: url(../img/performance.jpg);
