@@ -154,20 +154,18 @@ a:focus {
     background-position: top center;
 }
 #tf-home.per-commodity{
-    background: url(../img/per-commodity.jpg) no-repeat;
-    background-position: center center;
+    background: url(../img/per-commodity.jpg) no-repeat fixed center center / cover;;
 }
 #tf-home.per-equity{
     background: url(../img/per-equity.jpg) no-repeat;
     background-position: center center;
 }
 #tf-home.per-future{
-    background: url(../img/per-future.jpg) no-repeat;
-    background-position: center center;
+    background: url(../img/per-future.jpg) no-repeat fixed center 20px / cover;
+    background-size: 90%;
 }
 #tf-home.per-forex{
-    background: url(../img/per-forex.jpg) no-repeat;
-    background-position: center center;
+    background: url(../img/per-forex.jpg) fixed center center / cover;
 }
 #tf-home .overlay {
     background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
