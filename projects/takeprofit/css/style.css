@@ -57,7 +57,7 @@ a:focus {
     height: 30px;
     width: auto;
 }
-.navbar-default .navbar-brand{ padding: 12px 15px;color: #E5B112;font-size: 22px;font-weight: 700;text-transform: uppercase;letter-spacing: 0.5px;}
+.navbar-default .navbar-brand,.navbar-default .navbar-brand:hover{ padding: 12px 15px;color: #2ecc71;font-size: 22px;font-weight: 700;text-transform: uppercase;letter-spacing: 0.5px;}
 .navbar-nav > li > a {
     font-size: 13px;
     font-weight: 700;
