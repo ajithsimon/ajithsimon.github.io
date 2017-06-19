@@ -69,6 +69,9 @@ ul,ol{
     display: table-cell !important;
     vertical-align: middle;
 }
+.page-header{
+    border-bottom: 0;
+}
 .title-decor{
     position: relative;
     margin: 25px 0;
@@ -206,8 +209,12 @@ hr.style-eight {
     margin-bottom: 60px;
     margin-top: 40px;
 }
-.rct-works{
+.ajith-clients{
     padding: 60px 0;
+    text-align: center;
+}
+.ajith-clients img{
+    width: 160px;
 }
 .ak-effect {
     position: relative;
