@@ -59,6 +59,9 @@ ul,ol{
 .f-16{
     font-size: 16px;
 }
+.f-12{
+    font-size: 12px;
+}
 .ak-table{
     display: table;
 }
@@ -66,7 +69,31 @@ ul,ol{
     display: table-cell !important;
     vertical-align: middle;
 }
-
+.title-decor{
+    position: relative;
+    margin: 25px 0;
+    text-align: center;
+}
+.title-decor:before{
+    position: absolute;
+    top: 51%;
+    left: 0;
+    overflow: hidden;
+    width: 20%;
+    height: 1px;
+    content: '\a0';
+    background-color: #BEC3C6;
+}
+.title-decor:after{
+    position: absolute;
+    top: 51%;
+    right: 0;
+    overflow: hidden;
+    width: 20%;
+    height: 1px;
+    content: '\a0';
+    background-color: #BEC3C6;
+}
 /*home page*/
 .header-home{
     background: url(../img/imac.jpg) no-repeat center fixed ;
@@ -164,7 +191,7 @@ ul,ol{
 }
 .sp-1{
     padding: 60px 0;
-    background: #f4f4f4;
+    background: #F6F9FA;
 }
 .sp-1 img{
     height: 80px;
@@ -334,13 +361,17 @@ hr.style-eight {
     margin-right: 15px;
 }
 footer{
-    background: #222;
+    background: #F6F9FA;
     padding: 20px 0;
-    color: white;
 }
-footer p{
-    line-height: 36px;
-    margin-bottom: 0;
+footer img{
+    border: 5px solid rgba(255,255,255,0.5);
+}
+footer h3{
+    font-size: 32px;
+}
+footer ul{
+    margin-bottom: 20px;
 }
 a.back-to-top {
     display: none;
@@ -378,7 +409,7 @@ a.back-to-top {
 .navbar-default.affix {
     top: 0;
     width: 100%;
-    background: #222;
+    background: #424242;
     min-height: 50px;
     height: 50px;
     padding: 0;
