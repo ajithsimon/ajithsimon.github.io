@@ -11,6 +11,9 @@ html * {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
 }
+::-webkit-scrollbar { width: 2px;  }/* for vertical scrollbars */
+::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.1); }
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.5); }
 :focus{
     outline: 0;
 }
@@ -338,15 +341,24 @@ a.back-to-top {
 .navbar-default.affix {
     top: 0;
     width: 100%;
-    background: #424242;
+    background: #F6F9FA;
     min-height: 50px;
     height: 50px;
     padding: 0;
     transition: all 0.5s ease;
     z-index: 99;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.navbar-default.affix .navbar-nav > li > a,
+.navbar-default.affix .navbar-nav > li > a:active,
+.navbar-default.affix .navbar-nav > li > a:focus,
+.navbar-default.affix .navbar-nav > li > a:hover {
+    color: #424242;
 }
 .navbar-default.affix .navbar-brand img{
-    border: 3px solid rgba(255,255,255,0.4);
+    border: 3px solid rgba(0,0,0,0.4);
     width: 50px;
 }
 .navbar-brand{
@@ -393,9 +405,12 @@ and (orientation: portrait) {
         float: left;
     }
     .title-lead {
-        font-size: 26px;
-        line-height: 36px;
+        font-size: 28px;
+        line-height: 1.6;
         margin-top: 20px;
+    }
+    .title-lead br{
+        display: none;
     }
     .ak-effect.ak-effect-1 {
         height: 280px;
@@ -418,6 +433,9 @@ and (orientation: portrait) {
     }
     .title-decor:before,.title-decor:after{
         display: none;
+    }
+    .ajith-clients img{
+        width: 140px;
     }
 }
 
