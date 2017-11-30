@@ -100,6 +100,17 @@ ul,ol{
     content: '\a0';
     background-color: #BEC3C6;
 }
+
+.not-available{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: red;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
 /* Page loader */
 
 #pageLoader{
