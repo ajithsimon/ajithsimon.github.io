@@ -48,131 +48,150 @@
         <!-- End Google Tag Manager -->
     </head>
 
-    <body>
+    <body onload="stopAnimate()">
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKB38V"
                           height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <header> <!--header section-->
-            <nav class="navbar navbar-default" data-spy="affix" data-offset-top="100"> <!--navigation-->
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
-                            <span class="sr-only">Navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <a class="navbar-brand" href="index.html"><img src="img/ajith.png" alt="ajith" class="img-circle" width="200"></a>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class=" navbar-collapse" id="nav-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="http://ajithsimon.com/works">Works</a></li>
-                            <li><a href="http://ajithsimon.com/about">About</a></li>
-                            <li><a href="tel:09066964680" id="eventrack"><i class="fa fa-phone"></i> <span class="hidden-xs">09066964680</span></a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav><!--navigation-->
-            <section class="header-about"> <!--main bg-->
-                <div class="about-overlay">
-                    <div class="vertical-table">
-                        <div class="vertical-cell text-center f-white">
-                            <h1 class="title-lead">4 Years of Experience in<br/> Web Designing & Freelancer.</h1>
-                            <ul class="social-icons">
-                                <li class="fa-fb"><a href="https://www.facebook.com/ajithsimon" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li>
-                                <li class="fa-tw"><a href="https://www.twitter.com/ajithsimon_" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
-                                <li class="fa-gp"><a href="http://www.google.com/+Ajithkumarmaverick" target="_blank" rel="nofollow"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="fa-ld"><a href="https://in.linkedin.com/in/ajithsimon" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li>
-                                <li class="fa-wa"><a href="mailto:ajith438@gmail.com" rel="nofollow"><i class="fa fa-envelope"></i></a></li>
+        <div id="pageLoader">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="body-wrapper" style="display: none">
+            <header> <!--header section-->
+                <nav class="navbar navbar-default" data-spy="affix" data-offset-top="100"> <!--navigation-->
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                                <span class="sr-only">Navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="index.html"><img src="img/ajith.png" alt="ajith" class="img-circle" width="200"></a>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class=" navbar-collapse" id="nav-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="http://ajithsimon.com/works">Works</a></li>
+                                <li><a href="http://ajithsimon.com/about">About</a></li>
+                                <li><a href="tel:09066964680" id="eventrack"><i class="fa fa-phone"></i> <span class="hidden-xs">09066964680</span></a></li>
                             </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav><!--navigation-->
+                <section class="header-about"> <!--main bg-->
+                    <div class="about-overlay">
+                        <div class="vertical-table">
+                            <div class="vertical-cell text-center f-white">
+                                <h1 class="title-lead">4 Years of Experience in<br/> Web Designing & Freelancer.</h1>
+                                <ul class="social-icons">
+                                    <li class="fa-fb"><a href="https://www.facebook.com/ajithsimon" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="fa-tw"><a href="https://www.twitter.com/ajithsimon_" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="fa-gp"><a href="http://www.google.com/+Ajithkumarmaverick" target="_blank" rel="nofollow"><i class="fa fa-google-plus"></i></a></li>
+                                    <li class="fa-ld"><a href="https://in.linkedin.com/in/ajithsimon" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="fa-wa"><a href="mailto:ajith438@gmail.com" rel="nofollow"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--./main bg-->
+            </header><!--./header section-->
+            <section class="profile">
+                <div class="container">
+                    <div class="page-header"><h2 class="title-decor">The journey so far</h2></div>
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <p>Hey, I'm Ajithkumar, an Interaction Designer & UI / Front End Developer from Bangalore, India.</p>
+                            <p>By day, you'll find me collaborating with an incredibly talented product team @ Gympik Bangalore as an Front End Developer, defining new experiences that empower our users to connect, discover the fitness centers across India using the world wide web. </p>
+                            <p>By night, you'll find me contributing to my beloved design & development through website templates, learning front end tricks and technologies, support and update works for existing clients. </p>
+                            <p>Somewhere in between all of that, I'm a biker, movie lover, foodie who really loves to eat spicy hyderabadi biriyani.</p>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 text-center"><img src="img/ajith-full.jpg" alt="ajithsimon" class="img-responsive"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonials">
+                <div class="container">
+                    <div class="page-header"><h2 class="title-decor">What clients says</h2></div>
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="ak-table">
+                                <img alt="robinson" src="img/robin.png" width="70" class="table-cell img-circle">
+                                <div class="table-cell">
+                                    <p class="no-mar"><strong>Robinson C</strong></p>
+                                    <small>Founder & CEO, DailyTuT</small>
+                                </div>
+                            </div>
+                            <h4>Intelligent, Smart and Sharp. Ajith loves creating websites with excellent perfection and its never been about just getting the job done. He always finish it with his own style and recommends best to his clients that he work with and ensures 100% work satisfaction by the end of the day. His attitude with the team work is big plus for him and silently motivates others as well.</h4>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="ak-table">
+                                <img alt="Vijayanand" src="img/vijay.png" width="70" class="table-cell img-circle">
+                                <div class="table-cell">
+                                    <p class="no-mar "><strong>Vijayanand M</strong></p>
+                                    <small>Founder & CEO, JoomlaBuff</small>
+                                </div>
+                            </div>
+                            <h4>Ajith has shown great patience understanding our specific needs to develop our website. It's been a great pleasure to work with him - He deserve the recognition and applause for his excellent work and customer service. Thank you for such a successful outcome, and congratulations on your achievements.</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="ak-table">
+                                <img alt="Karthikeyan" src="img/karthikeyan.jpg" width="70" class="table-cell img-circle">
+                                <div class="table-cell">
+                                    <p class="no-mar"><strong>Karthikeyan</strong></p>
+                                    <small>Lead - Visual Designer</small>
+                                </div>
+                            </div>
+                            <h4>I was in search of a good front end developer for my client project, i stumbled upon this young guy called Ajith via google. Ajith comes with tremendous knowledge and experience, you can rely on his expertise 100% without an iota of doubt. I will always recommend this bundle of talent to anyone.</h4>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="ak-table">
+                                <img alt="Joseph" src="img/joseph.jpg" width="70" class="table-cell img-circle">
+                                <div class="table-cell">
+                                    <p class="no-mar"><strong>Darvin Joseph</strong></p>
+                                    <small>Product Manager</small>
+                                </div>
+                            </div>
+                            <h4>Innovative and enthusiastic web developer who carves the edges with high professionalism, working with him was a enjoyable session, his friendly approach makes him to understand our requirements and results more than what we expect. 
+                                I wish him all the best for future assignments, keep rocking with new innovations.</h4>
                         </div>
                     </div>
                 </div>
-            </section><!--./main bg-->
-        </header><!--./header section-->
-        <section class="profile">
-            <div class="container">
-                <div class="page-header"><h2 class="title-decor">The journey so far</h2></div>
-                <div class="row">
-                    <div class="col-sm-6 col-xs-12">
-                        <p>Hey, I'm Ajithkumar, an Interaction Designer & UI / Front End Developer from Bangalore, India.</p>
-                        <p>By day, you'll find me collaborating with an incredibly talented product team @ Gympik Bangalore as an Front End Developer, defining new experiences that empower our users to connect, discover the fitness centers across India using the world wide web. </p>
-                        <p>By night, you'll find me contributing to my beloved design & development through website templates, learning front end tricks and technologies, support and update works for existing clients. </p>
-                        <p>Somewhere in between all of that, I'm a biker, movie lover, foodie who really loves to eat spicy hyderabadi biriyani.</p>
-                    </div>
-                    <div class="col-sm-6 col-xs-12 text-center"><img src="img/ajith-full.jpg" alt="ajithsimon" class="img-responsive"></div>
+            </section>
+            <footer id="footer">
+                <div class="container text-center">
+                    <h4><img src="img/ajith.png" alt="ajith" class="img-circle" width="90"></h4>
+                    <h3>drop me a line</h3>
+                    <ul class="list-inline">
+                        <li><a href="mailto:ajith438@gmail.com" rel="nofollow">Email</a></li>
+                        <li>/</li>
+                        <li><a href="https://in.linkedin.com/in/ajithsimon" target="_blank" rel="nofollow">LinkedIn</a></li>
+                        <li>/</li>
+                        <li><a href="https://www.facebook.com/ajithsimon" target="_blank" rel="nofollow">facebook</a></li>
+                        <li>/</li>
+                        <li><a href="https://www.twitter.com/ajithsimon_" target="_blank" rel="nofollow">twitter</a></li>
+                    </ul>
+                    <p class="f-12">© 2017 Ajithkumar</p>
                 </div>
-            </div>
-        </section>
-        <section class="testimonials">
-            <div class="container">
-                <div class="page-header"><h2 class="title-decor">What clients says</h2></div>
-                <div class="row">
-                    <div class="col-sm-6 col-xs-12">
-                        <div class="ak-table">
-                            <img alt="robinson" src="img/robin.png" width="70" class="table-cell img-circle">
-                            <div class="table-cell">
-                                <p class="no-mar"><strong>Robinson C</strong></p>
-                                <small>Founder & CEO, DailyTuT</small>
-                            </div>
-                        </div>
-                        <h4>Intelligent, Smart and Sharp. Ajith loves creating websites with excellent perfection and its never been about just getting the job done. He always finish it with his own style and recommends best to his clients that he work with and ensures 100% work satisfaction by the end of the day. His attitude with the team work is big plus for him and silently motivates others as well.</h4>
-                    </div>
-                    <div class="col-sm-6 col-xs-12">
-                        <div class="ak-table">
-                            <img alt="Vijayanand" src="img/vijay.png" width="70" class="table-cell img-circle">
-                            <div class="table-cell">
-                                <p class="no-mar "><strong>Vijayanand M</strong></p>
-                                <small>Founder & CEO, JoomlaBuff</small>
-                            </div>
-                        </div>
-                        <h4>Ajith has shown great patience understanding our specific needs to develop our website. It's been a great pleasure to work with him - He deserve the recognition and applause for his excellent work and customer service. Thank you for such a successful outcome, and congratulations on your achievements.</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-xs-12">
-                        <div class="ak-table">
-                            <img alt="Karthikeyan" src="img/karthikeyan.jpg" width="70" class="table-cell img-circle">
-                            <div class="table-cell">
-                                <p class="no-mar"><strong>Karthikeyan</strong></p>
-                                <small>Lead - Visual Designer</small>
-                            </div>
-                        </div>
-                        <h4>I was in search of a good front end developer for my client project, i stumbled upon this young guy called Ajith via google. Ajith comes with tremendous knowledge and experience, you can rely on his expertise 100% without an iota of doubt. I will always recommend this bundle of talent to anyone.</h4>
-                    </div>
-                    <div class="col-sm-6 col-xs-12">
-                        <div class="ak-table">
-                            <img alt="Joseph" src="img/joseph.jpg" width="70" class="table-cell img-circle">
-                            <div class="table-cell">
-                                <p class="no-mar"><strong>Darvin Joseph</strong></p>
-                                <small>Product Manager</small>
-                            </div>
-                        </div>
-                        <h4>Innovative and enthusiastic web developer who carves the edges with high professionalism, working with him was a enjoyable session, his friendly approach makes him to understand our requirements and results more than what we expect. 
-                            I wish him all the best for future assignments, keep rocking with new innovations.</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer id="footer">
-            <div class="container text-center">
-                <h4><img src="img/ajith.png" alt="ajith" class="img-circle" width="90"></h4>
-                <h3>drop me a line</h3>
-                <ul class="list-inline">
-                    <li><a href="mailto:ajith438@gmail.com" rel="nofollow">Email</a></li>
-                    <li>/</li>
-                    <li><a href="https://in.linkedin.com/in/ajithsimon" target="_blank" rel="nofollow">LinkedIn</a></li>
-                    <li>/</li>
-                    <li><a href="https://www.facebook.com/ajithsimon" target="_blank" rel="nofollow">facebook</a></li>
-                    <li>/</li>
-                    <li><a href="https://www.twitter.com/ajithsimon_" target="_blank" rel="nofollow">twitter</a></li>
-                </ul>
-                <p class="f-12">© 2017 Ajithkumar</p>
-            </div>
-        </footer>
+            </footer>
+        </div>
         <!--Scripts-->
+        <script>
+            function stopAnimate() {
+                document.getElementById("pageLoader").style.display = "none";
+                document.getElementById("body-wrapper").style.display = "block";
+            }
+        </script>
     </body>
 </html>

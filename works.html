@@ -48,137 +48,156 @@
         <!-- End Google Tag Manager -->
     </head>
 
-    <body>
+    <body onload="stopAnimate()">
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKB38V"
                           height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <header> <!--header section-->
-            <nav class="navbar navbar-default" data-spy="affix" data-offset-top="100"> <!--navigation-->
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
-                            <span class="sr-only">Navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <a class="navbar-brand" href="index.html"><img src="img/ajith.png" alt="ajith" class="img-circle" width="200"></a>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class=" navbar-collapse" id="nav-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="http://ajithsimon.com/works">Works</a></li>
-                            <li><a href="http://ajithsimon.com/about">About</a></li>
-                            <li><a href="tel:09066964680" id="eventrack"><i class="fa fa-phone"></i> <span class="hidden-xs">09066964680</span></a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav><!--navigation-->
-            <section class="header-works"> <!--main bg-->
-                <div class="works-overlay">
-                    <div class="vertical-table">
-                        <div class="vertical-cell text-center f-white">
-                            <h1 class="title-lead">I create Smart, Professional <br/>& Unique Design Solutions</h1>
-                            <ul class="social-icons">
-                                <li class="fa-fb"><a href="https://www.facebook.com/ajithsimon" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li>
-                                <li class="fa-tw"><a href="https://www.twitter.com/ajithsimon_" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
-                                <li class="fa-gp"><a href="http://www.google.com/+Ajithkumarmaverick" target="_blank" rel="nofollow"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="fa-ld"><a href="https://in.linkedin.com/in/ajithsimon" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li>
-                                <li class="fa-wa"><a href="mailto:ajith438@gmail.com" rel="nofollow"><i class="fa fa-envelope"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section><!--./main bg-->
-        </header><!--./header section-->
-        <div class="sp-1">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/editor.svg" alt=""/>
-                        <p><span style="font-weight:600">4</span> Years of experience, Expert in Responsive designing.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/laptop.svg" alt=""/>
-                        <p><span style="font-weight:600">30+ </span>Domestic Websites and templates completed.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/team.svg" alt=""/>
-                        <p><span style="font-weight:600">15+ </span>satisfied clients, Both on-site and domestic.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/employee.svg" alt=""/>
-                        <p>Started my career as a <span style="font-weight:600">Freelancer</span> and still it's my part-time work. </p>
-                    </div>
+        <div id="pageLoader">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
                 </div>
             </div>
         </div>
-
-        <section class="ajith-clients">
-            <div class="container">
-                <div class="page-header">
-                    <h2 class="title-decor">Companies & Clients</h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6"><a href="http://gympik.com/" target="_blank" rel="nofollow"><img src="img/companies/gympik-logo.jpg" alt="Gympik"/></a></div>
-                    <div class="col-sm-3 col-xs-6"><a href="http://pixelmavericks.com/" target="_blank" rel="nofollow"><img src="img/companies/pm-logo.jpg" alt="Pixel Mavericks"/></a></div>
-                    <div class="col-sm-3 col-xs-6"><a href="http://w3cert.com/" target="_blank" rel="nofollow"><img src="img/companies/w3cert-logo.jpg" alt="W3Cert"/></a></div>
-                    <div class="col-sm-3 col-xs-6"><a href="http://joomlabuff.com/" target="_blank" rel="nofollow"><img src="img/clients/joomlabuff-logo.jpg" alt="joomlabuff"/></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6"><a href="http://www.nationalgeographic.com/" target="_blank" rel="nofollow"><img src="img/clients/ng-logo.jpg" alt="National Geographic"/></a></div>
-                    <div class="col-sm-3 col-xs-6"><a href="https://www.visitdubai.com/en" target="_blank" rel="nofollow"><img src="img/clients/dc-logo.jpg" alt="Dubai Calendar"/></a></div>
-                    <div class="col-sm-3 col-xs-6"><a href="https://sical.in/" target="_blank" rel="nofollow"><img src="img/clients/sical-logo.jpg" alt="Sical coffe day"/></a></div>
-                    <div class="col-sm-3 col-xs-6"><a href="http://aviratefashion.in/" target="_blank" rel="nofollow"><img src="img/clients/avirate-logo.jpg" alt=""/></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6"><a href="http://www.appraamlabs.com/" target="_blank" rel="nofollow"><img src="img/clients/appraam-logo.jpg" alt="Appraam labs"/></a></div>
-                    <div class="col-sm-3 col-xs-6"><a href="http://themeparrot.com/" target="_blank" rel="nofollow"><img src="img/clients/themeparrot-logo.jpg" alt="themeparrot"/></a></div>
-                    <div class="col-sm-3 col-xs-6"><a href="http://dailytut.com/" target="_blank" rel="nofollow"><img src="img/clients/dailytut-logo.jpg" alt="dailytut"/></a></div>
-                    <div class="col-sm-3 col-xs-6"><a href="javascript:void(0)" rel="nofollow"><img src="img/clients/vistayo.jpg" alt="Vistayo"/></a></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="lets-talk freelancer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12 title freelancer-intro">
-                        <h3>Freelance ui and front-end developer, Bangalore India.</h3>
-                        <div class="freelancer-status">
-
-                            <div class="gps_ring-unavailable"></div>
-                            <p><span class="unavailable"></span>Currently unavailable for freelance</p>
-
+        
+        <div id="body-wrapper" style="display: none">
+            <header> <!--header section-->
+                <nav class="navbar navbar-default" data-spy="affix" data-offset-top="100"> <!--navigation-->
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                                <span class="sr-only">Navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="index.html"><img src="img/ajith.png" alt="ajith" class="img-circle" width="200"></a>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class=" navbar-collapse" id="nav-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="http://ajithsimon.com/works">Works</a></li>
+                                <li><a href="http://ajithsimon.com/about">About</a></li>
+                                <li><a href="tel:09066964680" id="eventrack"><i class="fa fa-phone"></i> <span class="hidden-xs">09066964680</span></a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav><!--navigation-->
+                <section class="header-works"> <!--main bg-->
+                    <div class="works-overlay">
+                        <div class="vertical-table">
+                            <div class="vertical-cell text-center f-white">
+                                <h1 class="title-lead">I create Smart, Professional <br/>& Unique Design Solutions</h1>
+                                <ul class="social-icons">
+                                    <li class="fa-fb"><a href="https://www.facebook.com/ajithsimon" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="fa-tw"><a href="https://www.twitter.com/ajithsimon_" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="fa-gp"><a href="http://www.google.com/+Ajithkumarmaverick" target="_blank" rel="nofollow"><i class="fa fa-google-plus"></i></a></li>
+                                    <li class="fa-ld"><a href="https://in.linkedin.com/in/ajithsimon" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="fa-wa"><a href="mailto:ajith438@gmail.com" rel="nofollow"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-8 col-xs-12">
-                        <div class="content">
-                            <p>I love helping companies and start-ups discover and design new products, solve existing customer & user problems and define delightful, interactive user journeys.</p>
-                            <p>If you're looking for a freelance ux/ui designer or freelance front-end developer in Bangalore, India for your next project, <a href="mailto:ajith438@gmail.com">let's talk</a>.</p>
+                </section><!--./main bg-->
+            </header><!--./header section-->
+            <div class="sp-1">
+                <div class="container">
+                    <div class="row text-center row-eq-height">
+                        <div class="col-sm-3 col-xs-6">
+                            <img src="img/editor.svg" alt=""/>
+                            <p><span style="font-weight:600">4</span> Years of experience, Expert in Responsive designing.</p>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <img src="img/laptop.svg" alt=""/>
+                            <p><span style="font-weight:600">30+ </span>Domestic Websites and templates completed.</p>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <img src="img/team.svg" alt=""/>
+                            <p><span style="font-weight:600">15+ </span>satisfied clients, Both on-site and domestic.</p>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <img src="img/employee.svg" alt=""/>
+                            <p>Started my career as a <span style="font-weight:600">Freelancer</span> and still it's my part-time work. </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <footer id="footer">
-            <div class="container text-center">
-                <h4><img src="img/ajith.png" alt="ajith" class="img-circle" width="90"></h4>
-                <h3>drop me a line</h3>
-                <ul class="list-inline">
-                    <li><a href="mailto:ajith438@gmail.com" rel="nofollow">Email</a></li>
-                    <li>/</li>
-                    <li><a href="https://in.linkedin.com/in/ajithsimon" target="_blank" rel="nofollow">LinkedIn</a></li>
-                    <li>/</li>
-                    <li><a href="https://www.facebook.com/ajithsimon" target="_blank" rel="nofollow">facebook</a></li>
-                    <li>/</li>
-                    <li><a href="https://www.twitter.com/ajithsimon_" target="_blank" rel="nofollow">twitter</a></li>
-                </ul>
-                <p class="f-12">© 2017 Ajithkumar</p>
-            </div>
-        </footer>
+            <section class="ajith-clients">
+                <div class="container">
+                    <div class="page-header">
+                        <h2 class="title-decor">Companies & Clients</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6"><a href="http://gympik.com/" target="_blank" rel="nofollow"><img src="img/companies/gympik-logo.jpg" alt="Gympik"/></a></div>
+                        <div class="col-sm-3 col-xs-6"><a href="http://pixelmavericks.com/" target="_blank" rel="nofollow"><img src="img/companies/pm-logo.jpg" alt="Pixel Mavericks"/></a></div>
+                        <div class="col-sm-3 col-xs-6"><a href="http://w3cert.com/" target="_blank" rel="nofollow"><img src="img/companies/w3cert-logo.jpg" alt="W3Cert"/></a></div>
+                        <div class="col-sm-3 col-xs-6"><a href="http://joomlabuff.com/" target="_blank" rel="nofollow"><img src="img/clients/joomlabuff-logo.jpg" alt="joomlabuff"/></a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6"><a href="http://www.nationalgeographic.com/" target="_blank" rel="nofollow"><img src="img/clients/ng-logo.jpg" alt="National Geographic"/></a></div>
+                        <div class="col-sm-3 col-xs-6"><a href="https://www.visitdubai.com/en" target="_blank" rel="nofollow"><img src="img/clients/dc-logo.jpg" alt="Dubai Calendar"/></a></div>
+                        <div class="col-sm-3 col-xs-6"><a href="https://sical.in/" target="_blank" rel="nofollow"><img src="img/clients/sical-logo.jpg" alt="Sical coffe day"/></a></div>
+                        <div class="col-sm-3 col-xs-6"><a href="http://aviratefashion.in/" target="_blank" rel="nofollow"><img src="img/clients/avirate-logo.jpg" alt=""/></a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6"><a href="http://www.appraamlabs.com/" target="_blank" rel="nofollow"><img src="img/clients/appraam-logo.jpg" alt="Appraam labs"/></a></div>
+                        <div class="col-sm-3 col-xs-6"><a href="http://themeparrot.com/" target="_blank" rel="nofollow"><img src="img/clients/themeparrot-logo.jpg" alt="themeparrot"/></a></div>
+                        <div class="col-sm-3 col-xs-6"><a href="http://dailytut.com/" target="_blank" rel="nofollow"><img src="img/clients/dailytut-logo.jpg" alt="dailytut"/></a></div>
+                        <div class="col-sm-3 col-xs-6"><a href="javascript:void(0)" rel="nofollow"><img src="img/clients/vistayo.jpg" alt="Vistayo"/></a></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lets-talk freelancer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 title freelancer-intro">
+                            <h3>Freelance ui and front-end developer, Bangalore India.</h3>
+                            <div class="freelancer-status">
+
+                                <div class="gps_ring-unavailable"></div>
+                                <p><span class="unavailable"></span>Currently unavailable for freelance</p>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-xs-12">
+                            <div class="content">
+                                <p>I love helping companies and start-ups discover and design new products, solve existing customer & user problems and define delightful, interactive user journeys.</p>
+                                <p>If you're looking for a freelance ux/ui designer or freelance front-end developer in Bangalore, India for your next project, <a href="mailto:ajith438@gmail.com">let's talk</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <div class="container text-center">
+                    <h4><img src="img/ajith.png" alt="ajith" class="img-circle" width="90"></h4>
+                    <h3>drop me a line</h3>
+                    <ul class="list-inline">
+                        <li><a href="mailto:ajith438@gmail.com" rel="nofollow">Email</a></li>
+                        <li>/</li>
+                        <li><a href="https://in.linkedin.com/in/ajithsimon" target="_blank" rel="nofollow">LinkedIn</a></li>
+                        <li>/</li>
+                        <li><a href="https://www.facebook.com/ajithsimon" target="_blank" rel="nofollow">facebook</a></li>
+                        <li>/</li>
+                        <li><a href="https://www.twitter.com/ajithsimon_" target="_blank" rel="nofollow">twitter</a></li>
+                    </ul>
+                    <p class="f-12">© 2017 Ajithkumar</p>
+                </div>
+            </footer>
+        </div>
+        <script>
+            function stopAnimate() {
+                document.getElementById("pageLoader").style.display = "none";
+                document.getElementById("body-wrapper").style.display = "block";
+            }
+        </script>
     </body>
 </html>
